@@ -1,0 +1,163 @@
+body {
+    background-color: #DDDDDD	;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 100px;
+    height: 40px;
+    background-image: url("/JobsGo/asset/img/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+}
+
+#display-Email {
+    color: white;
+    font-size: 27px;
+    font-weight: bold
+}
+
+#container {
+    margin-top: 90px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+#main {
+    width: 1200px;
+    height: 1000px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.list-group {
+    width: 250px;
+    height: 500px;
+    margin-left: 30px;
+    background-color: white;
+}
+
+.list-group-item-heading :nth-child(1) {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    float: left;
+    border-radius: 3px;
+}
+
+.list-group-item-heading :nth-child(2) {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(170, 166, 166);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    float: left;
+
+}
+
+.list-group-item-heading :nth-child(2) i {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.list-group-item-title {
+    width: 100%;
+    height: 40px;
+    color: red;
+    background-color: #007bff;
+}
+
+.list-group-item {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+.text-title {
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 7px;
+    background-color: #007bff;
+    box-sizing: border-box;
+}
+.list-group-item i {
+    text-align: center;
+    padding-top: 10px;
+    width: 30px;
+    height: 40px;
+    background-color: rgb(179, 134, 134);
+    margin-right: 10px;
+    border-radius: 0px 50% 50% 0px;
+    box-sizing: border-box;
+}
+ul{
+  margin-top: 1px;
+}
+.list-group-item ul li {
+
+    padding-left: 0px;
+    height: 40px;
+    background-color: #C0C0C0	;
+    margin-bottom: 4px;
+}
+
+.information-Employer__img{
+    margin: 10px;
+   width: 1180px;
+   height: 500px;
+   background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
+   background-size: 100%;
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 5px;
+}
+.information-Employer__update{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 550;
+}
+.information-Employer_btnUpdate{
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: green;
+    border-color: green;
+    margin-top: 20px;
+   
+}

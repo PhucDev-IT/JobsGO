@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/js/all.js">
+    <script src="https://kit.fontawesome.com/0eb8452970.js" crossorigin="anonymous"></script>
+    <title>Form register </title>
+
+
+    <style>
+        span {
+            color: red;
+            display: block;
+            padding: 5px 0px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <h1>JobsGO</h1>
+            <p class="content-title">Tìm kiếm ứng viên & công việc phù hợp trong một vài phút<br>
+            </p>
+        </div>
+        <div id="wrapper">
+            <form action="" id="form-login">
+                <h1 class="form-heading">ĐĂNG KÝ TÀI KHOẢN </h1>
+                <div class="form-group">
+                    <input type="text" id="email" class="form-input" placeholder="Nhập Email">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" class="form-input" placeholder="Mật khẩu">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="repassword" class="form-input" placeholder="Nhập lại mật khẩu">
+                </div>
+                <div class="form_aside">
+                    <p class="form_policy-text">
+                        Khi bấm đăng ký bạn đã đồng ý với
+                        <a href="" class="form_policy-link"> <i> điều khoản sử dụng </i> </a><br>
+                        <b>Hoặc</b>
+                    </p>
+                    <input type="submit" onclick="validate();" id="btn" value="ĐĂNG KÝ" class="from-submit">
+                    <p class="form_dn-text">
+                        Bạn là thành viên JobsGO?
+                        <a href="" class="form_dn-link"> Đăng nhập </a><br>
+                    </p>
+            </form>
+        </div>
+
+
+
+    </main>
+
+</body>
+<script>
+
+    // Lấy giá trị của một input
+    function getValue(id) {
+        return document.getElementById(id).value;
+    }
+
+    // Hiển thị lỗi
+    function showError(key, mess) {
+        alert(key + "_error");
+        // document.getElementById(key + '_error').innerHTML = mess;
+    }
+
+    function validate() {
+        var flag = true;
+        // password
+        var password = getValue('password');
+        var repassword = getValue('repassword');
+        if (password == '' || password.length < 8 || password != repassword) {
+            flag = false;
+            showError('password', 'Vui lòng kiểm tra lại Password');
+        }
+    }
+</script>
+
+</html>
