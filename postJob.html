@@ -24,6 +24,11 @@
                         <div class="post-form-content-information__work title-infor">Ngành nghề:</div>
                         <input id="selected-work" type="text" style="height: 25px; width: 250px;">
                         <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        <ul class="dropdown-selectionwork-item" style="display: none;">
+                            <li>Công nghệ thông tin</li>
+                            <li>Kinh doanh</li>
+                            <li>Tiếp viên</li>
+                          </ul>
                         <input id="selected-specialized" type="text" style="height: 25px; width: 250px;">
                         <i class="fa-sharp fa-solid fa-caret-down"></i>
                     </div>
@@ -123,11 +128,48 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="post-form-content-information-demoWork" style="margin-top: 100px;">
+                    <div class="post-form-content-information-option__title">Mô tả công việc</div>
+                    <textarea name="" id="" cols="100" rows="10" style="margin-top: 20px; margin-left: 30px;border-color: red;"></textarea>
+                </div>
+
+                <div class="post-form-content-information-request" style="margin-top: 60px;">
+                    <div class="post-form-content-information-option__title">Yêu cầu công việc</div>
+                    <textarea name="" id="" cols="100" rows="10" style="margin-top: 20px; margin-left: 30px;border-color: red;"></textarea>
+                </div>
+
+                <div class="post-form-content-information-quyenLoi" style="margin-top: 50px;">
+                    <div class="post-form-content-information-option__title">Quyền lợi</div>
+                    <textarea name="" id="" cols="100" rows="10" style="margin-top: 20px; margin-left: 30px;border-color: red;"></textarea>
+                </div>
                 <button id="btn-post">Đăng bài</button>
             </div>
         </div>
     </div>
     </div>
 </body>
+
+<script>
+    const dropdown = document.querySelector('.post-form-content-information__work i');
+const menu = document.querySelector('.dropdown-selectionwork-item');
+const options = document.querySelectorAll('.dropdown-selectionwork-item li');
+const selectedOption = document.querySelector('#selected-work');
+
+dropdown.addEventListener('click', function() {
+  if (menu.style.display === 'none') {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
+});
+
+options.forEach(function(option) {
+  option.addEventListener('click', function() {
+    selectedOption.value = this.innerText;
+    menu.style.display = 'none';
+  });
+});
+</script>
 
 </html>

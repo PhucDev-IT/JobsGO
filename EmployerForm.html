@@ -23,11 +23,12 @@
         <div class="list-group">
             <div class="list-group-item-heading">
                 <button><i class="fa-regular fa-square-plus" style="color: #ffffff;"></i>Đăng bài</button>
-                <button>Đăng xuất <i class="fa-solid fa-arrow-right-from-bracket fa-sm" style="color: #4f4545;"></i></button>
+                <button>Đăng xuất <i class="fa-solid fa-arrow-right-from-bracket fa-sm"
+                        style="color: #4f4545;"></i></button>
             </div>
 
             <div class="list-group-item">
-               
+
                 <div class="list-group-item__account">
                     <div class="text-title">Tài khoản</div>
                     <ul style="list-style: none; padding: 0px;">
@@ -39,74 +40,210 @@
                 <div class="list-group-item__employer">
                     <div class="text-title">Doanh nghiệp</div>
                     <ul style="list-style: none; padding: 0px;">
-                        <li><i class="fa-sharp fa-solid fa-building" style="color: #ffffff;"></i> Thông tin doanh nghiệp</li>
-                        <li><i class="fa-solid fa-users" style="color: #f7f7f7;"></i> Ứng tuyển</li>
+                        <li id="one"><i class="fa-sharp fa-solid fa-building" style="color: #ffffff;"></i> Thông tin doanh nghiệp</li>
+                        <li class="two"><i class="fa-solid fa-users" style="color: #f7f7f7;"></i> Ứng tuyển</li>
                         <li><i class="fa-solid fa-list" style="color: #ffffff;"></i>Danh sách Job</li>
                         <!-- <li><i class="fa-regular fa-address-card" style="color: #ffffff;"></i>Ứng tuyển</li> -->
-            
+
                     </ul>
                 </div>
-                
+
             </div>
         </div>
-                    <!-- Xử lý -->
+
         <div id="main">
-            <!-- Thông tin doanh nghiệp -->
-            <div class="information-Employer">
-            <div class="information-Employer__img">
-                
+            <!-- Thông tin tài khoản -->
+            <div class="information-account-form">  
+                <h6>Thông tin tài khoản</h6>
+                <div class="information-account-form one">
+                    <div class="information-account-form one-avatar"></div>
+                    <div class="information-account-form one-information">
+                        <div>Loại tài khoản: <label for="" style="color: blue;">Doanh nghiệp</label></div>
+                        <div>Mã tài khoản: <label for="">#823423</label></div>
+                        <div>Ngày tạo: <label for="">3-6-2003</label></div>
+                    </div>
+                </div>
+
+                <div class="information-account-form two">
+                    <div class="row">
+                        <span >Tên đăng nhập:</span>
+                        <input type="text" style="width: 200px; height: 25px;">
+                    </div>
+                    <div class="row">
+                        <span>Mật khẩu:</span>
+                        <input type="password" style="width: 200px; height: 25px;">
+                    </div>
+                    <div class="row">
+                        <span>Email:</span>
+                        <input type="text" style="width: 200px; height: 25px;">
+                    </div>
+                    <div class="row">
+                        <span>Số điện thoại:</span>
+                        <input type="text" style="width: 200px; height: 25px;">
+                    </div>
+                </div>
+
             </div>
 
-            <table class="information-Employer__update">
-                <thead>
-                    <th></th>
-                    <th></th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label for="">Tên doanh nghiệp: </label></td>
-                        <td><input type="text" style="height: 25px; width: 450px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Mã số thuế: </label></td>
-                        <td><input type="text" style="height: 25px; width: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Mã đơn vị: </label></td>
-                        <td><input type="text" style="height: 25px; width: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Địa chỉ: </label></td>
-                        <td><input type="text" style="height: 25px; width: 450px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Di động: </label></td>
-                        <td><input type="text" style="height: 25px; width: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Điện thoại: </label></td>
-                        <td><input type="text" style="height: 25px; width: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Website: </label></td>
-                        <td><input type="text" style="height: 25px; width: 450px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Fax: </label></td>
-                        <td><input type="text" style="height: 25px; width: 200px;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Email: </label></td>
-                        <td><input type="email" style="height: 25px; width: 200px;"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <input class="information-Employer_btnUpdate" type="submit" value="Cập nhật">
+
+            <!-- Thông tin doanh nghiệp -->
+            <div class="information-Employer" style="display: none;">
+                <div class="information-Employer__img">
+                </div>
+
+                <table class="information-Employer__update">
+                    <thead>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="">Tên doanh nghiệp: </label></td>
+                            <td><input type="text" style="height: 25px; width: 450px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Mã số thuế: </label></td>
+                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Mã đơn vị: </label></td>
+                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Địa chỉ: </label></td>
+                            <td><input type="text" style="height: 25px; width: 450px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Di động: </label></td>
+                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Điện thoại: </label></td>
+                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Website: </label></td>
+                            <td><input type="text" style="height: 25px; width: 450px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Fax: </label></td>
+                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Email: </label></td>
+                            <td><input type="email" style="height: 25px; width: 200px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input class="information-Employer_btnUpdate" type="submit" value="Cập nhật">
             </div>
-            
+
         </div>
     </div>
-    <footer></footer>
+    
+    <!-- Đăng bài -->
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-one">
+            <div class="footer-one-content">
+                <ul class="footer-one-content-list">
+                    <li class="footer-one-content-item">
+                        <img src="./asset/img/logo.png" alt="">
+                    </li>
+                    <li class="footer-one-content-item">
+                        <a href="#"><i class="fa-solid fa-earth-americas"></i> Vietnam / Vietnamese</a>
+                    </li>
+                    <li class="footer-one-content-item">
+                        <a href="#"><i class="fa-solid fa-circle-question"></i> Help & Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-one-content">
+                <ul class="footer-one-content-work-list">
+                    <h2>Việc làm</h2>
+                    <li class="footer-one-content-work-item"><a href="#">Thể Loại</a></li>
+                    <li class="footer-one-content-work-item"><a href="#">Doanh nghiệp</a></li>
+                    <li class="footer-one-content-work-item"><a href="#">Cuộc thi</a></li>
+                </ul>
+            </div>
+            <div class="footer-one-content">
+                <ul class="footer-one-content-about-list">
+                    <h2>Về</h2>
+                    <li class="footer-one-content-about-item"><a href="#">Về chúng tôi</a></li>
+                    <li class="footer-one-content-about-item"><a href="#">Bảo mật</a></li>
+                    <li class="footer-one-content-about-item"><a href="#">team</a></li>
+                </ul>
+            </div>
+            <div class="footer-one-content footer-one-content-term">
+                <ul class="footer-one-content-term-list">
+                    <h2>Điều khoản</h2>
+                    <li class="footer-one-content-term-item"><a href="#">Chính sách bảo mật</a></li>
+                    <li class="footer-one-content-term-item"><a href="#">Các điều khoản và điều kiện</a></li>
+                    <li class="footer-one-content-term-item"><a href="#">Chính sách bản quyền</a></li>
+                </ul>
+            </div>
+            <div class="footer-one-content footer-one-content-partners">
+                <ul class="footer-one-content-partners-list">
+                    <h2>Đối tác</h2>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">google</a>
+                    </li>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">nasa</a>
+                    </li>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">mars</a>
+                    </li>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">alien</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-one-content footer-one-content-app">
+                <ul class="footer-one-content-app-list">
+                    <h2>Ứng dụng</h2>
+                    <li class="footer-one-content-app-item">
+                        <a href="#"><img src="./asset/img/app_store.png" alt=""></a>
+                    </li>
+                    <li class="footer-one-content-app-item">
+                        <a href="#"><img src="./asset/img/google_play.png" alt=""></a>
+                    </li>
+                    <li class="footer-one-content-app-item">
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-facebook"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-twitter"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-youtube"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-insta"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="footer-two-content">
+                <span>
+                    423423 <br>
+                    Người dùng
+                </span>
+            </div>
+            <div class="footer-two-content">
+                <span>
+                    463 <br>
+                    Số lượng công việc đã đăng
+                </span>
+            </div>
+            <div class="footer-two-content">
+                <span>
+                    JobsGo ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759) <br>
+                    Copyright © 2023 Freelancer Technology Pty Limited (ACN 142 189 759)
+                </span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

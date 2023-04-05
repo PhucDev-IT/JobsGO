@@ -1,3 +1,10 @@
+html{
+    -webkit-user-select: none; /* Cho các trình duyệt dựa trên WebKit */
+   -moz-user-select: none; /* Cho các trình duyệt dựa trên Gecko */
+   -ms-user-select: none; /* Cho các trình duyệt dựa trên Microsoft */
+   user-select: none; /* Chức năng có sẵn trên các trình duyệt hiện đại */
+}
+
 body {
     background-color: #DDDDDD	;
 }
@@ -53,7 +60,9 @@ header .content {
     width: 250px;
     height: 500px;
     margin-left: 30px;
-    background-color: white;
+    border-radius: 5px;
+   background-color: white;
+   
 }
 
 .list-group-item-heading :nth-child(1) {
@@ -100,7 +109,7 @@ header .content {
 .list-group-item {
     margin-top: 50px;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: white;
 }
 
@@ -160,4 +169,183 @@ ul{
     border-color: green;
     margin-top: 20px;
    
+}
+.list-group li:hover{
+    background-color: #FFCCCC;
+}
+.list-group li:active{
+    background-color: #66CCCC;
+}
+
+/* Thông tin tài khoản */
+.information-account-form h6{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 30px;
+
+}
+
+.information-account-form .one{
+    width: 400px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: 30px;
+    border: 1px solid #C0C0C0	;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+
+.information-account-form .one-avatar{
+    margin-top: 4px;
+    margin-left: 19px;
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50%;
+   background-image: url("https://demoda.vn/wp-content/uploads/2022/02/avatar-anime-cute.jpg");
+   background-size: 100%;
+}
+.information-account-form .one-information{
+    width: 240px;
+    height: 150px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.information-account-form .one-information div{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.information-account-form .two{
+    width: 600px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: 550px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-account-form .two{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Đăng bài */
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    color: #c0bbb2;
+}
+
+footer a{
+    color: #c0bbb2;
+}
+
+footer a:hover{
+    color: var(--white-color);
+}
+
+.footer-one{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.footer-one::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 95%;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    bottom: 0;
+}
+
+.footer-one-content-list img{
+    width: 15rem;
+}
+
+.footer-one-content-item{
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-one-content-work-list h2{
+    padding-top: 2.3rem;
+    color: var(--white-color);
+}
+
+.footer-one-content-work-item{
+    padding-top: 1rem;
+}
+
+.footer-one-content-about-list h2{
+    padding-top: 2.3rem;
+    color: var(--white-color);
+}
+
+.footer-one-content-about-item{
+    padding-top: 1rem;
+}
+
+.footer-one-content-term-list h2{
+    padding-top: 2.3rem;
+    color: var(--white-color);
+}
+
+.footer-one-content-term-item{
+    padding-top: 1rem;
+}
+
+.footer-one-content-partners-list h2{
+    padding-top: 2.3rem;
+    color: var(--white-color);
+}
+
+.footer-one-content-partners-item{
+    padding-top: 1rem;
+}
+
+.footer-one-content-app-list h2{
+    padding-top: 2.3rem;
+    color: var(--white-color);
+}
+
+.footer-one-content-app-item{
+    padding-top: 1rem;
+}
+
+
+.footer-one-content-app-item-link{
+    font-size: 1.6rem;
+    padding: 0 1rem;
+}
+
+.footer-one-content-app-item-facebook:hover{
+    color: #1877f2;
+}
+
+.footer-one-content-app-item-twitter:hover{
+    color: #71afff;
+}
+
+.footer-one-content-app-item-youtube:hover{
+    color: #f00;
+}
+
+.footer-one-content-app-item-insta:hover{
+    color: #ff3593;
+}
+
+.footer-two{
+    display: flex;
+    justify-content: space-around;
+    color: var(--white-color);
+    padding-top: 2rem;
 }
