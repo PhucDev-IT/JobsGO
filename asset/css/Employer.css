@@ -1,20 +1,27 @@
-html{
-    -webkit-user-select: none; /* Cho các trình duyệt dựa trên WebKit */
-   -moz-user-select: none; /* Cho các trình duyệt dựa trên Gecko */
-   -ms-user-select: none; /* Cho các trình duyệt dựa trên Microsoft */
-   user-select: none; /* Chức năng có sẵn trên các trình duyệt hiện đại */
+html {
+    -webkit-user-select: none;
+    /* Cho các trình duyệt dựa trên WebKit */
+    -moz-user-select: none;
+    /* Cho các trình duyệt dựa trên Gecko */
+    -ms-user-select: none;
+    /* Cho các trình duyệt dựa trên Microsoft */
+    user-select: none;
+    /* Chức năng có sẵn trên các trình duyệt hiện đại */
 }
 
 body {
-    background-color: #DDDDDD	;
+    background-color: #DDDDDD;
+    font-family: 'Inter', sans-serif;
 }
 
+
+
 header {
-    width: 100%;
-    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 50px;
     background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
     padding: 10px;
     box-sizing: border-box;
@@ -43,17 +50,18 @@ header .content {
 }
 
 #container {
-    margin-top: 90px;
+    margin-top: 80px;
     display: flex;
     overflow: hidden;
 
 }
 
 #main {
-    width: 1200px;
-    height: 1000px;
+    width: 1150px;
+    /* min-heigt */
     margin-left: 10px;
     background-color: white;
+   
 }
 
 .list-group {
@@ -61,8 +69,8 @@ header .content {
     height: 500px;
     margin-left: 30px;
     border-radius: 5px;
-   background-color: white;
-   
+    background-color: white;
+
 }
 
 .list-group-item-heading :nth-child(1) {
@@ -123,6 +131,7 @@ header .content {
     background-color: #007bff;
     box-sizing: border-box;
 }
+
 .list-group-item i {
     text-align: center;
     padding-top: 10px;
@@ -133,34 +142,42 @@ header .content {
     border-radius: 0px 50% 50% 0px;
     box-sizing: border-box;
 }
-ul{
-  margin-top: 1px;
+
+ul {
+    margin-top: 1px;
 }
+
 .list-group-item ul li {
 
     padding-left: 0px;
     height: 40px;
-    background-color: #C0C0C0	;
+    background-color: #C0C0C0;
     margin-bottom: 4px;
 }
 
-.information-Employer__img{
+.information-Employer__img {
     margin: 10px;
-   width: 1180px;
-   height: 500px;
-   background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
-   background-size: 100%;
-   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    width: 1120px;
+    height: 500px;
+    background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
+    background-size: 100%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 5px;
 }
-.information-Employer__update{
-    margin-top: 50px;
+
+.information-Employer__update {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    font-size: 17px;
-    font-weight: 550;
+    font-size: 20px;
+    font-weight: 500;
 }
-.information-Employer_btnUpdate{
+
+.information-Employer__update td label {
+    margin-right: 30px;
+}
+
+.information-Employer_btnUpdate {
     width: 100px;
     height: 40px;
     font-size: 17px;
@@ -168,56 +185,134 @@ ul{
     color: green;
     border-color: green;
     margin-top: 20px;
-   
+
 }
-.list-group li:hover{
+
+.list-group li:hover {
     background-color: #FFCCCC;
 }
-.list-group li:active{
+
+.list-group li:active {
     background-color: #66CCCC;
 }
 
-/* Thông tin tài khoản */
-.information-account-form h6{
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: -4px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #08d40b;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #b70b11;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.information-Employer__status-switch-name {
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+.information-Employer__status {
+    margin-top: -8px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.information-Employer__status .number-staff {
+    margin-left: 30px;
+}
+
+.information-Employer__status .number-staff i {
+    margin-top: 20px;
+    margin-right: 7px;
+}
+
+/* --------------------------------------Thông tin tài khoản --------------------------------------------*/
+.information-account-form h6 {
     margin-top: 20px;
     margin-left: 15px;
     font-size: 30px;
-
 }
 
-.information-account-form .one{
+.information-account-form .one {
     width: 400px;
     height: 150px;
     margin-top: -20px;
     margin-left: 30px;
-    border: 1px solid #C0C0C0	;
+    border: 1px solid #C0C0C0;
     display: flex;
     justify-content: space-between;
     float: left;
 }
 
-.information-account-form .one-avatar{
+.information-account-form .one-avatar {
     margin-top: 4px;
     margin-left: 19px;
     width: 140px;
     height: 140px;
     border: 1px solid black;
     border-radius: 50%;
-   background-image: url("https://demoda.vn/wp-content/uploads/2022/02/avatar-anime-cute.jpg");
-   background-size: 100%;
+    background-image: url("https://demoda.vn/wp-content/uploads/2022/02/avatar-anime-cute.jpg");
+    background-size: 100%;
 }
-.information-account-form .one-information{
+
+.information-account-form .one-information {
     width: 240px;
     height: 150px;
     padding-top: 25px;
     box-sizing: border-box;
 }
-.information-account-form .one-information div{
+
+.information-account-form .one-information div {
     margin-top: 10px;
     margin-left: 20px;
 }
 
-.information-account-form .two{
+.information-account-form .two {
     width: 600px;
     height: 150px;
     margin-top: -20px;
@@ -227,38 +322,299 @@ ul{
     justify-content: space-between;
 }
 
-.information-account-form .two{
+.information-account-form .two {
     display: flex;
     flex-direction: column;
 }
 
-/* Đăng bài */
+.information-account-form .two {
+    display: flex;
+    flex-direction: column;
+}
 
 
+
+/* Đổi mật khẩu */
+
+.changePassword-form-input {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+/* ------------------------------------------------- ĐĂNG XUẤT------------------------------------------- */
+
+.modal-logout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    /* Nằm giữa chiều ngang của thẻ cha */
+    justify-content: center;
+}
+
+.logout-confirmation {
+    height: 100px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* -----------------------------------------Đăng bài------------------------------------------------------------- */
+/* width */
+.modal::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+.modal ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.modal::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.modal::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    overflow: scroll;
+    /* Nằm giữa chiều ngang của thẻ cha */
+    justify-content: center;
+
+}
+
+.modal-header {
+    margin-top: -35px;
+    height: 50px;
+    background-color: #6666FF;
+    box-sizing: border-box;
+}
+
+.modal-container-post {
+    margin-top: 40px;
+    min-height: 1900px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.modal-header h5 {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.modal-body .post-information {
+    margin-top: 30px;
+    padding-left: 50px;
+
+}
+
+.label-title {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #5AA8FF;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+.modal-body .post-information__selection-option {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input-form-label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.input-form-label :nth-child(1) {
+    width: 100px;
+    height: 30px;
+    margin-left: -50px;
+    background-color: rgb(202, 215, 215);
+    border: 1px solid rgb(130, 128, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-information-label {
+    height: 50px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+    background-color: #FDF5E6;
+    padding-left: 20px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.modal-body .post-information .option-input li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.post-information-input input {
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: green;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.post-information-input label {
+    margin-left: -65px;
+    margin-right: 60px;
+}
+
+.modal-body .post-information .list-checkbox-walfare {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-body .post-information .list-checkbox-walfare li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 33%;
+}
+
+.modal-body .post-information textarea {
+    width: 600px;
+}
+
+#btn-post {
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #FDF5E6;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+#btn-post:hover {
+    background-color: aquamarine;
+}
+
+/* ---------------------------------- Quản lý bài viết tuyển dụng ------------------------------------------------------ */
+.post-management-form .number-post{
+    margin-top: -5px;
+margin-left: 15px;
+}
+.post-management-form .container{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.post-management-form .container img{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.post-management-form .container-content{
+margin-left: 20px;
+}
+.post-management-form .container-content .header .header-content{
+    margin-top: -45px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.body-information{
+    margin-top: 3px;
+    font-size: 14px;
+}
+.container-content .body button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+}
+#btn-view-post-detail{
+    background-color: #6666FF;
+}
+#btn-remove-post{
+    background-color: #f45b60;
+    margin-right: 150px;
+}
+#btn-lock{
+    width: 60px; 
+    height: 30px; 
+    border: 1px solid yellow;
+}
+#btn-lock:hover{
+    background-color: #9f9f9f;
+}
 /* footer */
 
-footer{
+footer {
     width: 100%;
     height: 300px;
+    margin-top: 50px;
     background-color: #333;
     color: #c0bbb2;
 }
 
-footer a{
+footer a {
     color: #c0bbb2;
 }
 
-footer a:hover{
+footer a:hover {
     color: var(--white-color);
 }
 
-.footer-one{
+.footer-one {
     display: flex;
     justify-content: space-around;
     position: relative;
 }
 
-.footer-one::after{
+.footer-one::after {
     content: "";
     display: block;
     position: absolute;
@@ -267,83 +623,83 @@ footer a:hover{
     bottom: 0;
 }
 
-.footer-one-content-list img{
+.footer-one-content-list img {
     width: 15rem;
 }
 
-.footer-one-content-item{
+.footer-one-content-item {
     padding-top: 15px;
     font-size: 1.5rem;
 }
 
-.footer-one-content-work-list h2{
+.footer-one-content-work-list h2 {
     padding-top: 2.3rem;
     color: var(--white-color);
 }
 
-.footer-one-content-work-item{
+.footer-one-content-work-item {
     padding-top: 1rem;
 }
 
-.footer-one-content-about-list h2{
+.footer-one-content-about-list h2 {
     padding-top: 2.3rem;
     color: var(--white-color);
 }
 
-.footer-one-content-about-item{
+.footer-one-content-about-item {
     padding-top: 1rem;
 }
 
-.footer-one-content-term-list h2{
+.footer-one-content-term-list h2 {
     padding-top: 2.3rem;
     color: var(--white-color);
 }
 
-.footer-one-content-term-item{
+.footer-one-content-term-item {
     padding-top: 1rem;
 }
 
-.footer-one-content-partners-list h2{
+.footer-one-content-partners-list h2 {
     padding-top: 2.3rem;
     color: var(--white-color);
 }
 
-.footer-one-content-partners-item{
+.footer-one-content-partners-item {
     padding-top: 1rem;
 }
 
-.footer-one-content-app-list h2{
+.footer-one-content-app-list h2 {
     padding-top: 2.3rem;
     color: var(--white-color);
 }
 
-.footer-one-content-app-item{
+.footer-one-content-app-item {
     padding-top: 1rem;
 }
 
 
-.footer-one-content-app-item-link{
+.footer-one-content-app-item-link {
     font-size: 1.6rem;
     padding: 0 1rem;
 }
 
-.footer-one-content-app-item-facebook:hover{
+.footer-one-content-app-item-facebook:hover {
     color: #1877f2;
 }
 
-.footer-one-content-app-item-twitter:hover{
+.footer-one-content-app-item-twitter:hover {
     color: #71afff;
 }
 
-.footer-one-content-app-item-youtube:hover{
+.footer-one-content-app-item-youtube:hover {
     color: #f00;
 }
 
-.footer-one-content-app-item-insta:hover{
+.footer-one-content-app-item-insta:hover {
     color: #ff3593;
 }
 
-.footer-two{
+.footer-two {
     display: flex;
     justify-content: space-around;
     color: var(--white-color);
