@@ -12,7 +12,7 @@ html {
 body {
     background-color: #DDDDDD;
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    margin: 0;
 }
 
 
@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3.3rem;
+    height: 50px;
     background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
     padding: 10px;
     box-sizing: border-box;
@@ -34,8 +34,8 @@ header .content {
 }
 
 #logo {
-    width: 8rem;
-    height: 2.6rem;
+    width: 100px;
+    height: 40px;
     background-image: url("/JobsGo/asset/img/logo.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -46,36 +46,37 @@ header .content {
 
 #display-Email {
     color: white;
-    font-size: 1.3rem;
-    font-weight:bold
+    font-size: 27px;
+    font-weight: bold
 }
 
 #container {
-    margin-top: 5%;
+    margin-top: 80px;
     display: flex;
     overflow: hidden;
 
 }
 
 #main {
-    width: 72rem;
+    width: 1150px;
+    /* min-heigt */
     margin-left: 10px;
     background-color: white;
    
 }
 
 .list-group {
-    width: 18rem;
-    height: 30rem;
-    margin-left: 2rem;
-    border-radius: 2%;
+    width: 250px;
+    height: 500px;
+    margin-left: 30px;
+    border-radius: 5px;
     background-color: white;
 
 }
 
 .list-group-item-heading :nth-child(1) {
     width: 50%;
-    height: 2.5rem;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,12 +84,12 @@ header .content {
     background-color: #007bff;
     border: none;
     float: left;
-    border-radius: 0.2rem;
+    border-radius: 3px;
 }
 
 .list-group-item-heading :nth-child(2) {
     width: 50%;
-    height: 2.5rem;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,57 +101,72 @@ header .content {
 }
 
 .list-group-item-heading :nth-child(2) i {
-    width: 2rem;
-    height: 2rem;
+    width: 30px;
+    height: 30px;
     margin-right: 4px;
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
 }
 
-.list-group-item {
-    margin-top: 3rem;
+.list-group-item-title {
     width: 100%;
-    height: 27rem;
+    height: 40px;
+    color: red;
+    background-color: #007bff;
+}
+
+.list-group-item {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
     background-color: white;
 }
 
 .text-title {
-    height: 2.6rem;
+    height: 40px;
     color: white;
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 7px;
     background-color: #007bff;
     box-sizing: border-box;
 }
 
 .list-group-item i {
     text-align: center;
-    padding-top: 0.67rem;
-    width: 2rem;
-    height: 2.5rem;
+    padding-top: 10px;
+    width: 30px;
+    height: 40px;
     background-color: rgb(179, 134, 134);
-    margin-right: 0.6rem;
+    margin-right: 10px;
     border-radius: 0px 50% 50% 0px;
     box-sizing: border-box;
 }
 
 ul {
-    margin-top: 0.1px;
+    margin-top: 1px;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
 
 .list-group-item ul li {
-    height: 2.6rem;
+
+    padding-left: 0px;
+    height: 40px;
     background-color: #C0C0C0;
-    margin-bottom: 0.1rem;
+    margin-bottom: 4px;
 }
 
 .information-Employer__img {
-    margin: 0.6rem;
-    width: 97%;
-    height: 32rem;
-    background-repeat: no-repeat;
+    margin: 10px;
+    width: 1120px;
+    height: 500px;
     background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
     background-size: 100%;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -158,26 +174,26 @@ ul {
 }
 
 .information-Employer__update {
-    margin-top: 1.3rem;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .information-Employer__update td label {
-    margin-right: 2rem;
+    margin-right: 30px;
 }
 
 .information-Employer_btnUpdate {
-    width: 6.7rem;
-    height: 2.6rem;
-    font-size: 1.1rem;
-    border-radius: 0.3rem;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 5px;
     color: green;
     border-color: green;
-    margin-top: 1.3rem;
-
+    margin-top: 20px;
+    margin-left: 878px;
 }
 
 .list-group li:hover {
@@ -191,8 +207,8 @@ ul {
 .switch {
     position: relative;
     display: inline-block;
-    width: 3rem;
-    height: 1.3rem;
+    width: 45px;
+    height: 20px;
 }
 
 .slider {
@@ -200,7 +216,7 @@ ul {
     cursor: pointer;
     top: 0;
     left: 0;
-    right: -0.15rem;
+    right: -4px;
     bottom: 0;
     background-color: #ccc;
     -webkit-transition: .4s;
@@ -210,13 +226,24 @@ ul {
 .slider:before {
     position: absolute;
     content: "";
-    height: 1.2rem;
-    width: 1.2rem;
-    left: 0.15rem;
-    bottom: 0.07rem;
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 1px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
+}
+
+.information-Employer__img {
+    margin: 10px;
+    width: 97%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
+    background-size: 100%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 5px;
 }
 
 input:checked+.slider {
@@ -228,14 +255,14 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(1.7rem);
-    -ms-transform: translateX(1.7rem);
-    transform: translateX(1.7rem);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 2rem;
+    border-radius: 30px;
 }
 
 .slider.round:before {
@@ -243,38 +270,38 @@ input:checked+.slider:before {
 }
 
 .information-Employer__status-switch-name {
-    font-size: 1.3rem;
-    padding-left: 0.7rem;
+    font-size: 19px;
+    padding-left: 10px;
 }
 
 .information-Employer__status {
-    margin-top: -0.5rem;
-    margin-left: 2.7rem;
+    margin-top: -8px;
+    margin-left: 40px;
     display: flex;
     flex-direction: row;
 }
 
 .information-Employer__status .number-staff {
-    margin-left: 2rem;
+    margin-left: 30px;
 }
 
 .information-Employer__status .number-staff i {
-    margin-top: 1.3rem;
-    margin-right: 0.5rem;
+    margin-top: 20px;
+    margin-right: 7px;
 }
 
 /* --------------------------------------Thông tin tài khoản --------------------------------------------*/
 .information-account-form h6 {
-    margin-top: 1.3rem;
-    margin-left: 1rem;
-    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 30px;
 }
 
 .information-account-form .one {
-    width: 27rem;
-    height: 10rem;
-    margin-top: -1.3rem;
-    margin-left: 2rem;
+    width: 400px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: 30px;
     border: 1px solid #C0C0C0;
     display: flex;
     justify-content: space-between;
@@ -282,34 +309,33 @@ input:checked+.slider:before {
 }
 
 .information-account-form .one-avatar {
-    margin-top: 0.5rem;
-    margin-left: 1.3rem;
-    width: 9rem;
-    height: 9rem;
+    margin-top: 4px;
+    margin-left: 19px;
+    width: 140px;
+    height: 140px;
     border: 1px solid black;
     border-radius: 50%;
     background-image: url("https://demoda.vn/wp-content/uploads/2022/02/avatar-anime-cute.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .information-account-form .one-information {
-    width: 16rem;
-    height: 10rem;
-    padding-top: 1.6rem;
+    width: 240px;
+    height: 150px;
+    padding-top: 25px;
     box-sizing: border-box;
 }
 
 .information-account-form .one-information div {
-    margin-top: 0.7rem;
-    margin-left: 1.3rem;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .information-account-form .two {
-    width: 35rem;
-    height: 12rem;
-    margin-top: -1.3rem;
-    margin-left: 36rem;
+    width: 600px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: 550px;
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
@@ -332,7 +358,7 @@ input:checked+.slider:before {
 .changePassword-form-input {
     display: flex;
     justify-content: center;
-    font-size: 1.7rem;
+    font-size: 25px;
 
 }
 
@@ -352,34 +378,34 @@ input:checked+.slider:before {
 }
 
 .logout-confirmation {
-    height: 6.66rem;
+    height: 100px;
     background-color: white;
-    padding: 1.3rem;
+    padding: 20px;
     border: 1px solid black;
 }
 
 /* -----------------------------------------Đăng bài------------------------------------------------------------- */
 /* width */
-.modal-post::-webkit-scrollbar {
+.modal::-webkit-scrollbar {
     width: 0px;
 }
 
 /* Track */
-.modal-post ::-webkit-scrollbar-track {
+.modal ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
 /* Handle */
-.modal-post::-webkit-scrollbar-thumb {
+.modal::-webkit-scrollbar-thumb {
     background: #888;
 }
 
 /* Handle on hover */
-.modal-post::-webkit-scrollbar-thumb:hover {
+.modal::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-.modal-post {
+.modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -394,39 +420,39 @@ input:checked+.slider:before {
 }
 
 .modal-header {
-    margin-top: -2.3rem;
-    height: 3.4rem;
+    margin-top: -35px;
+    height: 50px;
     background-color: #6666FF;
     box-sizing: border-box;
 }
 
 .modal-container-post {
-    margin-top: 2.7rem;
-    min-height: 115rem;
+    margin-top: 40px;
+    min-height: 1900px;
     background-color: #ffffff;
     position: relative;
 }
 
 .modal-header h5 {
-    padding-top: 0.7rem;
-    padding-left: 1.3rem;
-    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
     box-sizing: border-box;
 }
 
 .modal-body .post-information {
-    margin-top: 2rem;
-    padding-left: 3.4rem;
+    margin-top: 30px;
+    padding-left: 50px;
 
 }
 
 .label-title {
-    width: 6.6rem;
-    height: 1.8rem;
-    margin-bottom: 0.6rem;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
     background-color: #5AA8FF;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,13 +470,13 @@ input:checked+.slider:before {
 .input-form-label {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0.6rem;
+    margin-bottom: 10px;
 }
 
 .input-form-label :nth-child(1) {
-    width: 6.67rem;
-    height: 1.9rem;
-    margin-left: -3.3rem;
+    width: 100px;
+    height: 30px;
+    margin-left: -50px;
     background-color: rgb(202, 215, 215);
     border: 1px solid rgb(130, 128, 128);
     display: flex;
@@ -459,36 +485,36 @@ input:checked+.slider:before {
 }
 
 .post-information-label {
-    height: 3.3rem;
-    margin-left: -3.3rem;
-    margin-bottom: 2rem;
+    height: 50px;
+    margin-left: -50px;
+    margin-bottom: 30px;
     background-color: #FDF5E6;
-    padding-left: 1.3rem;
-    padding-top: 1rem;
+    padding-left: 20px;
+    padding-top: 15px;
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: 24px;
 }
 
 .modal-body .post-information .option-input li {
     display: inline-block;
-    margin-top: 1.8rem;
+    margin-top: 20px;
 }
 
 .post-information-input input {
-    width: 13.3rem;
-    height: 1.6rem;
-    border-radius: 0.2rem;
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-color: green;
-    margin-bottom: 2.6rem;
-    margin-right: 1.3rem;
+    margin-bottom: 40px;
+    margin-right: 20px;
 }
 
 .post-information-input label {
-    margin-left: -4.3rem;
-    margin-right: 4rem;
+    margin-left: -65px;
+    margin-right: 60px;
 }
 
 .modal-body .post-information .list-checkbox-walfare {
@@ -497,25 +523,25 @@ input:checked+.slider:before {
 }
 
 .modal-body .post-information .list-checkbox-walfare li {
-    font-size: 1rem;
-    margin-bottom: 0.67rem;
+    font-size: 15px;
+    margin-bottom: 10px;
     width: 33%;
 }
 
 .modal-body .post-information textarea {
-    width: 40rem;
+    width: 600px;
 }
 
 #btn-post {
-    margin-top: 3.3rem;
+    margin-top: 50px;
     display: block;
-    width: 13.3rem;
-    height: 2.6rem;
+    width: 200px;
+    height: 40px;
     margin: 0 auto;
-    margin-top: 2rem;
-    font-size: 1.3rem;
+    margin-top: 30px;
+    font-size: 20px;
     background-color: #FDF5E6;
-    border-radius: 0.3rem;
+    border-radius: 5px;
     border: 1px solid green;
 }
 
@@ -525,45 +551,46 @@ input:checked+.slider:before {
 
 /* ---------------------------------- Quản lý bài viết tuyển dụng ------------------------------------------------------ */
 .post-management-form .number-post{
-    margin-top: -0.3rem;
-margin-left: 1rem;
+    margin-top: -5px;
+margin-left: 15px;
 }
 .post-management-form .container{
-    margin-top: 1.3rem;
-    margin-left: 2rem;
-    width: 47rem;
-    border-radius: 0.3rem;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 700px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
 .post-management-form .container img{
-    margin: 0.6rem;
-    width: 13.3rem;
-    height: 13.3rem;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
     border: 1px solid black;
 }
 .post-management-form .container-content{
-margin-left: 1.3rem;
+margin-left: 20px;
 }
 .post-management-form .container-content .header .header-content{
-    margin-top: -3rem;
-    margin-left: 2rem;
-    font-size: 0.9rem;
+    margin-top: -45px;
+    margin-left: 30px;
+    font-size: 12px;
 }
 .body-information{
-    margin-top: 0.2rem;
-    font-size: 1rem;
+    margin-top: 3px;
+    font-size: 14px;
 }
 .container-content .body button{
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-    height: 2rem;
-    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
     font-weight: 600;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 4px;
     color: white;
 
 }
@@ -572,10 +599,11 @@ margin-left: 1.3rem;
 }
 #btn-remove-post{
     background-color: #f45b60;
+    margin-right: 150px;
 }
 #btn-lock{
-    width: 4rem; 
-    margin-left: 10rem;
+    width: 60px; 
+    height: 30px; 
     border: 1px solid yellow;
 }
 #btn-lock:hover{
@@ -585,10 +613,11 @@ margin-left: 1.3rem;
 
 footer {
     width: 100%;
-    height: 20rem;
-    margin-top: 3.3rem;
+    height: 400px;
+    margin-top: 50px;
     background-color: #333;
     color: #c0bbb2;
+    font-size: 1rem;
 }
 
 footer a {
@@ -596,7 +625,8 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--white-color);
+    color: #fff;
+    text-decoration: underline;
 }
 
 .footer-one {
