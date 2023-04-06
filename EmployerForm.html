@@ -22,9 +22,10 @@
         <!-- MENU -->
         <div class="list-group">
             <div class="list-group-item-heading">
-                <button id="post-btn"><i class="fa-regular fa-square-plus" style="color: #ffffff;"></i>Đăng bài</button>
-                <button id="btn-logout">Đăng xuất <i class="fa-solid fa-arrow-right-from-bracket fa-sm"
-                        style="color: #4f4545;"></i></button>
+                <button id="post-btn" onclick="showPostForm();"><i class="fa-regular fa-square-plus"
+                        style="color: #ffffff;"></i>Đăng bài</button>
+                <button id="btn-logout" onclick="logout();">Đăng xuất <i
+                        class="fa-solid fa-arrow-right-from-bracket fa-sm" style="color: #4f4545;"></i></button>
             </div>
 
             <div class="list-group-item">
@@ -32,21 +33,25 @@
                 <div class="list-group-item__account">
                     <div class="text-title">Tài khoản</div>
                     <ul style="list-style: none; padding: 0px;">
-                        <li id="js-infor-account"><i class="fa-solid fa-user" style="color: #ffffff;"></i>Thông tin tài
+                        <li id="js-infor-account" onclick="ConvertForm();"><i class="fa-solid fa-user"
+                                style="color: #ffffff;"></i>Thông tin tài
                             khoản</li>
-                        <li id="js-change-password"><i class="fa-solid fa-lock" style="color: #ffffff;"></i>Đổi mật khẩu
+                        <li id="js-change-password" onclick="ConvertForm();"><i class="fa-solid fa-lock"
+                                style="color: #ffffff;"></i>Đổi mật khẩu
                         </li>
                     </ul>
                 </div>
 
-                <div class="list-group-item__employer">
+                <div class="list-group-item__employer" style="margin-top: -0.6rem;">
                     <div class="text-title">Doanh nghiệp</div>
                     <ul style="list-style: none; padding: 0px;">
-                        <li id="btn-employer"><i class="fa-sharp fa-solid fa-building" style="color: #ffffff;"></i>
-                            Thông tin
-                            doanh nghiệp</li>
-                        <li class="two"><i class="fa-solid fa-users" style="color: #f7f7f7;"></i> Ứng tuyển</li>
-                        <li id="js-btn-list-jobs"><i class="fa-solid fa-list" style="color: #ffffff;"></i>Danh sách Job</li>
+                        <li id="btn-employer" onclick="ConvertForm();"><i class="fa-sharp fa-solid fa-building"
+                                style="color: #ffffff;"></i>
+                            Thông tin doanh nghiệp</li>
+                        <li id="js-btn-candidate" onclick="ConvertForm();"><i class="fa-solid fa-users"
+                                style="color: #f7f7f7;"></i> Ứng tuyển</li>
+                        <li id="js-btn-list-jobs" onclick="ConvertForm();"><i class="fa-solid fa-list"
+                                style="color: #ffffff;"></i>Danh sách Job</li>
                         <!-- <li><i class="fa-regular fa-address-card" style="color: #ffffff;"></i>Ứng tuyển</li> -->
 
                     </ul>
@@ -71,19 +76,19 @@
                 <div class="information-account-form two">
                     <div class="row">
                         <span>Tên đăng nhập:</span>
-                        <input type="text" style="width: 200px; height: 25px;">
+                        <input type="text" style="width: 13.5rem; height: 1.6rem;">
                     </div>
                     <div class="row">
                         <span>Mật khẩu:</span>
-                        <input type="password" style="width: 200px; height: 25px;">
+                        <input type="password" style="width: 13.5rem; height: 1.6rem;">
                     </div>
                     <div class="row">
                         <span>Email:</span>
-                        <input type="text" style="width: 200px; height: 25px;">
+                        <input type="text" style="width: 13.5rem; height: 1.6rem;">
                     </div>
                     <div class="row">
                         <span>Số điện thoại:</span>
-                        <input type="text" style="width: 200px; height: 25px;">
+                        <input type="text" style="width: 13.5rem; height: 1.6rem;">
                     </div>
                 </div>
 
@@ -91,25 +96,25 @@
 
             <!-- Đổi mật khẩu -->
             <div class="changePassword-form" style="display: none;">
-                <h6 style="font-size: 26px; margin: 30px;">Đổi mật khẩu</h6>
+                <h6 style="font-size: 1.7rem; margin: 1.8rem;">Đổi mật khẩu</h6>
                 <div class="changePassword-form-input">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Tài khoản:</td>
-                                <td><input type="text" style="width: 200px; height: 25px;"></td>
+                                <td><input type="text" style="width: 13.5rem; height: 1.6rem;"></td>
                             </tr>
                             <tr>
                                 <td>Mật khẩu:</td>
-                                <td><input type="password" style="width: 200px; height: 25px;"></td>
+                                <td><input type="password" style="width: 13.5rem; height: 1.6rem;"></td>
                             </tr>
                             <tr>
                                 <td>Mật khẩu mới:</td>
-                                <td><input type="password" style="width: 200px; height: 25px;"></td>
+                                <td><input type="password" style="width: 13.5rem; height: 1.6rem;"></td>
                             </tr>
                             <tr>
                                 <td>Nhập lại mật khẩu mới:</td>
-                                <td><input type="password" style="width: 200px; height: 25px;"></td>
+                                <td><input type="password" style="width: 13.5rem; height: 1.6rem;"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -119,12 +124,12 @@
             <!-- Thông tin doanh nghiệp -->
             <div class="information-Employer" style="display: none;">
                 <div class="information-Employer__img"></div>
-                <h6 style="font-size: 27px;margin: 20px;">Thông tin chung</h6>
+                <h6 style="font-size: 1.8rem;margin: 1.3rem;">Thông tin chung</h6>
                 <div class="information-Employer__status">
 
                     <div class="information-Employer__status-switch">
                         <label class="switch">
-                            <input id="switch-status" type="checkbox" checked>
+                            <input id="switch-status" type="checkbox" checked onclick="ToggleSwitchStatus();">
                             <span class="slider round"></span>
                         </label>
 
@@ -135,7 +140,7 @@
                     </div>
                     <div class="information-Employer__status number-staff">
                         <i class="fa-solid fa-users fa-sm" style="color: #9c9fa5;"></i>
-                        <label for="" style="font-size: 19px; padding-top: 10px;">342</label>
+                        <label for="" style="font-size: 1.3rem; padding-top: 0.6rem;">342</label>
                     </div>
                 </div>
                 <table class="information-Employer__update">
@@ -146,42 +151,42 @@
                     <tbody>
                         <tr>
                             <td style="text-align: right;"><label for="">Tên doanh nghiệp: </label></td>
-                            <td><input type="text" style="height: 25px; width: 450px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 30rem;"></td>
                         </tr>
 
                         <tr>
                             <td style="text-align: right;"><label for="">Mã số thuế: </label></td>
-                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 13.4rem;"></td>
 
                         </tr>
                         <tr>
                             <td style="text-align: right;"><label for="">Mã đơn vị: </label></td>
-                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 13.4rem;"></td>
                         </tr>
 
                         <tr>
                             <td style="text-align: right;"><label for="">Địa chỉ: </label></td>
-                            <td><input type="text" style="height: 25px; width: 450px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 30rem;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: right;"><label for="">Di động: </label></td>
-                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 13.4rem;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: right;"><label for="">Điện thoại: </label></td>
-                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 13.4rem;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: right;"><label for="">Website: </label></td>
-                            <td><input type="text" style="height: 25px; width: 450px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 30rem;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: right;"><label for="">Fax: </label></td>
-                            <td><input type="text" style="height: 25px; width: 200px;"></td>
+                            <td><input type="text" style="height: 1.6rem; width: 13.4rem;"></td>
                         </tr>
                         <tr>
                             <td style="text-align: right;"><label for="">Email: </label></td>
-                            <td><input type="email" style="height: 25px; width: 200px;"></td>
+                            <td><input type="email" style="height: 1.6rem; width: 13.4rem;"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -190,7 +195,7 @@
 
             <!-- Quản lý bài viêt -->
             <div class="post-management-form" style="display: none;">
-                <h6 style="font-size: 20px; margin: 10px;">Quản lý bài viết</h6>
+                <h6 style="font-size: 1.3rem; margin: 0.6rem;">Quản lý bài viết</h6>
                 <div class="post-management-form number-post">
                     <i class="fa-regular fa-file"></i>
                     2
@@ -200,13 +205,13 @@
                     <img src="/JobsGO/asset/img/dangTuyen.png" alt="Không còn ảnh">
                     <div class="post-management-form container-content">
                         <div class="post-management-form container-content header">
-                            <h6 style="font-size: 22px; margin-top: 15px;">Tuyển lập trình viên font-end</h6>
+                            <h6 style="font-size: 1.5rem; margin-top: 1rem;">Tuyển lập trình viên font-end</h6>
                             <div class="header-content">
                                 <span class="header-calendar">
                                     <i class="fa-solid fa-calendar-days" style="color: #848c9a;"></i>
                                     2019-12-2
                                 </span>
-                                <span class="header-view" style="margin-left: 20px;">
+                                <span class="header-view" style="margin-left: 1.3rem;">
                                     <i class="fa-solid fa-eye" style="color: #71747a;"></i> 10
                                 </span>
                             </div>
@@ -214,14 +219,14 @@
                         </div>
                         <hr>
                         <div class="container-content body">
-                            <label class="body-name-Company" style="font-size: 15px; color: #6a6d71;">Công ty đập đá Bar
+                            <label class="body-name-Company" style="font-size: 1rem; color: #6a6d71;">Công ty đập đá Bar
                                 VietNamese</label>
                             <div class="body-information">
                                 <span>
                                     Đã đăng ký:
                                     <span>31</span>
                                 </span>
-                                <span style="color: red; margin-left: 5px; margin-right: 5px;">|</span>
+                                <span style="color: red; margin-left: 0.3rem; margin-right: 0.3rem;">|</span>
                                 <span>
                                     Số lượng cần tuyển:
                                     <span>40</span>
@@ -244,7 +249,7 @@
                                 <button id="btn-view-post-detail" class="body-btn">Xem chi tiết</button>
                                 <button id="btn-remove-post" class="body-btn">Xóa đăng tuyển</button>
 
-                                <button id="btn-lock">
+                                <button id="btn-lock" onclick="openlockPost();">
                                     <i id="js-post-open" class="fa-solid fa-lock-open fa-lg"
                                         style="color: #16ba19;"></i>
                                     <i id="js-post-lock" class="fa-sharp fa-solid fa-lock fa-lg"
@@ -252,14 +257,10 @@
                                 </button>
 
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
@@ -366,11 +367,11 @@
     </footer>
 
     <!-- Modal đăng bài tuyển dụng -->
-    <div class="modal" style="visibility: hidden">
+    <div class="modal-post" style="visibility: hidden">
         <div class="modal-container-post">
             <div>
                 <i class="modal-close fa-solid fa-circle-xmark"
-                    style="color: #AAAAAA;position: absolute; right: 15px; top: 15px;"></i>
+                    style="color: #AAAAAA;position: absolute; right: 1rem; top: 1rem;"></i>
             </div>
             <div class="modal-header">
                 <h5>Đăng tuyển</h5>
@@ -381,9 +382,9 @@
                     <div class="modal-body post-information__selection">
 
                         <div class="modal-body post-information__selection-option">
-                            <div class="label-title">Ngành nghề</div>
+                            <div class="label-title">Ngành nghề:</div>
                             <div class="modal-body post-information__selection-option-work">
-                                <select name="" id="" style="height: 30px; width: 250px;">
+                                <select name="" id="" style="height: 1.8rem; width: 16.6rem;">
                                     <option value="">Công nghệ thông tin</option>
                                     <option value="">Kinh doanh</option>
                                 </select>
@@ -391,7 +392,7 @@
                             </div>
 
                             <div class="modal-body post-information__selection-specialized">
-                                <select name="" id="" style="height: 30px; width: 250px;">
+                                <select name="" id="" style="height: 1.8rem; width: 16.6rem;">
                                     <option value="">Kỹ thuật phần mềm</option>
                                     <option value="">Hệ thống thông tin</option>
                                     <option value="">Kỹ thuật máy tính</option>
@@ -402,7 +403,7 @@
 
                         <div class="modal-body post-information__selection-option">
                             <div class="label-title">Ngày hết hạn:</div>
-                            <input type="date" style="width: 300px; height: 26px; text-align: center;">
+                            <input type="date" style="width: 20rem; height: 1.6rem; text-align: center;">
                         </div>
                     </div>
 
@@ -410,19 +411,19 @@
                         <div class="input-form-label">
                             <div>Tiêu đề:</div>
                             <input type="text"
-                                style="width: 500px; height: 29px; background-color: rgb(223, 224, 224); border-width: 0px 0px 1px 0px;">
+                                style="width: 33rem; height: 1.8rem; background-color: rgb(223, 224, 224); border-width: 0px 0px 1px 0px;">
                         </div>
 
                         <div class="input-form-label">
                             <div>Vị trí:</div>
                             <input type="text"
-                                style="width: 500px; height: 29px; background-color: rgb(223, 224, 224); border-width: 0px 0px 1px 0px;">
+                                style="width: 33rem; height: 1.8rem; background-color: rgb(223, 224, 224); border-width: 0px 0px 1px 0px;">
                         </div>
 
                         <div class="input-form-label">
                             <div>Địa chỉ:</div>
                             <input type="text"
-                                style="width: 500px; height: 28px; background-color: rgb(223, 224, 224); border-width: 0px 0px 1px 0px;">
+                                style="width: 33rem; height: 1.8rem; background-color: rgb(223, 224, 224); border-width: 0px 0px 1px 0px;">
                         </div>
                     </div>
                 </div>
@@ -453,15 +454,15 @@
 
                     <div class="modal-body post-information__selection">
                         <div class="modal-body post-information__selection-option">
-                            <div class="label-title">Hình thức</div>
+                            <div class="label-title">Hình thức:</div>
                             <div class="modal-body post-information__selection-option-one">
-                                <select name="" id="" style="height: 30px; width: 250px;">
+                                <select name="" id="" style="height: 1.8rem; width: 16.6rem;">
                                     <option value="">Thực tập sinh</option>
 
                                 </select>
                             </div>
                             <div class="modal-body post-information__selection-option-one">
-                                <select name="" id="" style="height: 30px; width: 250px;">
+                                <select name="" id="" style="height: 1.8rem; width: 16.6rem;">
                                     <option value="">Part-time</option>
                                     <option value="">Full-time</option>
                                 </select>
@@ -469,14 +470,14 @@
                         </div>
 
                         <div class="modal-body post-information__selection-option">
-                            <div class="label-title">Thời gian</div>
+                            <div class="label-title">Thời gian:</div>
                             <div class="modal-body post-information__selection-option-two">
-                                <select name="" id="" style="height: 30px; width: 250px;">
+                                <select name="" id="" style="height: 1.8rem; width: 16.6rem;">
                                     <option value="">Giờ hành chính</option>
                                 </select>
                             </div>
                             <div class="modal-body post-information__selection-option-two">
-                                <select name="" id="" style="height: 30px; width: 250px;">
+                                <select name="" id="" style="height: 1.8rem; width: 16.6rem;">
                                     <option value="">Thứ 2 - Thứ 6</option>
                                     <option value="">Thứ 2 - Thứ 7</option>
                                     <option value="">Thứ 2 - Chủ nhật</option>
@@ -521,17 +522,20 @@
 
                 <div class="modal-body post-information">
                     <div class="post-information-label">Mô tả công việc</div>
-                    <textarea name="" id="" cols="95" rows="10" style="margin-top: 20px;border-color: red;"></textarea>
+                    <textarea name="" id="" cols="95" rows="10"
+                        style="margin-top: 1.3rem;border-color: red;"></textarea>
                 </div>
 
                 <div class="modal-body post-information">
                     <div class="post-information-label">Yêu cầu công việc</div>
-                    <textarea name="" id="" cols="95" rows="10" style="margin-top: 20px;border-color: red;"></textarea>
+                    <textarea name="" id="" cols="95" rows="10"
+                        style="margin-top: 1.3rem;border-color: red;"></textarea>
                 </div>
 
                 <div class="modal-body post-information">
                     <div class="post-information-label">Quyền lợi</div>
-                    <textarea name="" id="" cols="95" rows="10" style="margin-top: 20px;border-color: red;"></textarea>
+                    <textarea name="" id="" cols="95" rows="10"
+                        style="margin-top: 1.3rem;border-color: red;"></textarea>
                 </div>
                 <button id="btn-post">Đăng bài</button>
             </div>
@@ -549,117 +553,7 @@
         </div>
     </div>
 
-
-
-    <script>
-        var BtnPost = document.querySelector('#post-btn');
-        var postForm = document.querySelector('.modal');
-        var btnClose = document.querySelector('.modal-close');
-        BtnPost.addEventListener('click', function () {
-            postForm.style = "visibility:active";
-        })
-
-        btnClose.addEventListener('click', function () {
-            postForm.style.display = "none";
-        });
-    </script>
 </body>
-
-<script>
-    var btnlogout = document.getElementById('btn-logout');
-    btnlogout.addEventListener('click', function show() {
-        var configrmation = document.querySelector('.modal-logout');
-        configrmation.style = "visibility: active";
-    })
-
-    var btnYes = document.querySelector('#no-btn')
-    btnYes.addEventListener('click', function hideLogoutConfirmation() {
-        var confirmation = document.querySelector('.modal-logout');
-        confirmation.style = 'visibility: hidden';
-    })
-
-    var btnNo = document.querySelector('#yes-btn');
-    btnNo.addEventListener('click', logout)
-    function logout() {
-        window.location.href = "/JobsGO/login.html"
-    }
-</script>
-
-
-<script>
-    // Click chọn thông tin doanh nghiệp
-    var clickInforEmployer = document.querySelector('#btn-employer');
-    var EmployerForm = document.querySelector('.information-Employer')
-
-    clickInforEmployer.addEventListener('click', function () {
-        AccountForm.style.display = 'none';
-        chanePassForm.style.display = "none";
-        // listPostForm.style.display = 'none';
-        EmployerForm.style.display = "block";
-    })
-
-    //  Click chọn thông tin tài khoản
-    var btnInforAccount = document.querySelector('#js-infor-account');
-    var AccountForm = document.querySelector('.information-account-form');
-
-    btnInforAccount.addEventListener('click', function () {
-        EmployerForm.style.display = "none";
-        chanePassForm.style.display = "none";
-        // listPostForm.style.display = 'none';
-        AccountForm.style.display = 'block';
-    });
-
-    // Chọn form đổi mật khẩu
-    var chanePassForm = document.querySelector('.changePassword-form');
-    var btnChangePass = document.querySelector('#js-change-password');
-
-    btnChangePass.addEventListener('click', function () {
-        EmployerForm.style.display = "none";
-        AccountForm.style.display = 'none';
-        // listPostForm.style.display = 'none';
-        chanePassForm.style.display = "block";
-    });
-
-    //Click chọn Danh sách các JOB
-    var listPostForm = document.getElementsByClassName('post-management-form');
-    var btnListJobs = document.getElementById('js-btn-list-jobs');
-    btnLis.addEventListener('click',function(){
-        EmployerForm.style.display = "none";
-        AccountForm.style.display = 'none';
-        chanePassForm.style.display = "none";
-        listPostForm.style.display = "block";
-    })
-    
-</script>
-
-<script>
-    var selectionStatus = document.getElementById("switch-status");
-    var statusOn = document.getElementById('status-name-on');
-    var statusOff = document.getElementById('status-name-off');
-    selectionStatus.addEventListener('click', function () {
-        if (selectionStatus.checked == true) {
-            statusOff.style.display = 'none';
-            statusOn.style.display = 'inline';
-        } else {
-            statusOff.style.display = 'inline';
-            statusOn.style.display = 'none';
-        }
-    })
-</script>
-
-<script>
-    var btnLockPost = getElementById('btn-lock');
-    var iconOpen = querySelector('#js-post-open');
-    var iconLock = querySelector('#js-post-lock');
-    btnLockPost.addEventListener('click', function () {
-        if (iconLock.style.display = "none") {
-            iconOpen.style.display = "none"
-            iconLock.style.display = "inline"
-        } else {
-            iconOpen.style.display = "inline"
-            iconLock.style.display = "none"
-        }
-    })
-</script>
+<script src="/JobsGO/asset/javascript/moduleEmployer.js"></script>
 
 </html>
