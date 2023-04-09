@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./asset/javascript/slide_show.js"></script>
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/normal.css">
     <link rel="stylesheet" href="./asset/css/main.css">
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,84 +25,91 @@
                     <div class="navbar-item-up-first">
                         <ul class="navbar-item-list">
                             <li class="navbar-item-list-item"><img src="./asset/img/logo.png" alt=""></li>
-                            <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Cách hoạt động</a></li>
-                            <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Duyệt công việc</a></li>
+                            <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Cách hoạt động</a>
+                            </li>
+                            <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Duyệt công
+                                    việc</a></li>
                         </ul>
                     </div>
                     <div class="navbar-item-up-second">
                         <ul class="navbar-item-list">
-                            <li class="navbar-item-list-item"><a href=""><i class="fa-solid fa-bell"></i> thông báo</a></li>
-                            <li class=" navbar-item-list-item navbar-item-list-item-dash"><a href=""><i class="fa-solid fa-circle-info"></i> trợ giúp</a></li>
-                            <li class="navbar-item-list-item"><a href="./register.html">đăng ký</a></li>
-                            <li class="navbar-item-list-item"><a href="./login.html">đăng nhập</a></li>
+                            <li class="navbar-item-list-item"><a href=""><i class="fa-solid fa-bell"></i> thông báo</a>
+                            </li>
+                            <li class=" navbar-item-list-item navbar-item-list-item-dash"><a href=""><i
+                                        class="fa-solid fa-circle-info"></i> trợ giúp</a></li>
+                            <li class="navbar-item-list-item hide"><a href="./register.html">đăng ký</a></li>
+                            <li class="navbar-item-list-item hide"><a href="./login.html">đăng nhập</a></li>
+                            <li class="navbar-item-list-item navbar-item-list-item-user hide2">
+                                <img src="./asset/img/avatar.png" alt="">
+                                <span>demo user</span>
+                                <ul class="navbar-item-list-item-user-list">
+                                    <li class="item1"><a href="">Thông tin cá nhân</a></li>
+                                    <li class="item2"><a id="logout" href="">Đăng xuất</a></li>
+                                </ul>
+
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="navbar-item navbar-item-down">
                     <ul class="navbar-item-list">
                         <li class="navbar-item-list-item navbar-item-list-item-find">
-                            <a href="">Tìm việc</a>
+                            <a href="">Công ty </a>
                             <div class="navbar-item-list-item-info1">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info1-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info1-item">
-                                        <a href="">Theo kỹ năng</a>
+                                        <a href="">Công ty tiêu biểu </a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info1-item">
-                                        <a href="">Theo địa chỉ</a>
-                                    </li>
-                                    <li class="navbar-item-list-item-info-item navbar-item-list-item-info1-item">
-                                        <a href="">Theo lương</a>
+                                        <a href="">Tất cả công ty </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="navbar-item-list-item navbar-item-list-item-hire">
-                            <a href="">Thuê nhân công</a>
+                            <a href="">Nhà tuyển dụng </a>
                             <div class="navbar-item-list-item-info2">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info2-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info2-item">
-                                        <a href="">Theo kỹ năng</a>
+                                        <a href="">Đăng tin online </a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info2-item">
-                                        <a href="">Theo địa chỉ</a> 
+                                        <a href="">Tìm hồ sơ </a> 
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="navbar-item-list-item navbar-item-list-item-idea">
-                            <a href="">Lấy ý tưởng</a>
+                            <a href="">Việc làm </a>
                             <div class="navbar-item-list-item-info3">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info3-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
-                                        <a href="">ý tưởng thiết kế web</a> 
+                                        <a href="">Việc làm mới nhất </a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
-                                        <a href="">ý tưởng thiết kế mobile app</a>
+                                        <a href="">Tìm việc làm </a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
-                                        <a href="">ý tưởng đô họa</a>
+                                        <a href="">Việc làm quản lý</a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
-                                        <a href="">ý tưởng logo</a>
+                                        <a href="">Phỏng vấn </a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
-                                        <a href="">ý tưởng model 3D</a>
-                                    </li>
-                                    <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
-                                        <a href="">ý tưởng wordpress</a>
+                                        <a href="">Mức lương</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="navbar-item-list-item navbar-item-list-item-about">
-                            <a href="">Về chúng tôi</a>
+                            <a href="">CV/Hồ Sơ</a>
                             <div class="navbar-item-list-item-info4">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info4-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info4-item">
-                                        <a href="">về chúng tôi</a>
+                                        <a href="">Tạo CV</a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info4-item">
-                                        <a href="">team </a></li>
+                                        <a href="">Sửa lỗi CV</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -108,11 +117,48 @@
                 </div>
             </nav>
         </header>
+      </div>
 
         <main>
-            <div class="poster">
-
+            <div class="slideshow">
+                <video id="myVideo1" class="slideshow-video" loop autoplay>
+                    <source src="./asset/img/mobile-phone-v3 - Trim.mp4" type="video/mp4">
+                    <p>Trình duyệt của bạn không hỗ trợ phát video.</p>
+                </video>
+                <video id="myVideo2" class="slideshow-video" loop autoplay>
+                    <source src="./asset/img/house-v3 - Trim.mp4" type="video/mp4">
+                    <p>Trình duyệt của bạn không hỗ trợ phát video.</p>
+                </video>
+                <video id="myVideo3" class="slideshow-video" loop autoplay>
+                    <source src="./asset/img/nasa-v3 - Trim.mp4" type="video/mp4">
+                    <p>Trình duyệt của bạn không hỗ trợ phát video.</p>
+                </video>
             </div>
+            <!-- <script>
+                var videos = [
+                    document.getElementById("myVideo1"),
+                    document.getElementById("myVideo2"),
+                    document.getElementById("myVideo3")
+                ];
+
+                var index = 0;
+
+                function switchVideo() {
+                    videos[index].style.display = "none";
+                    index++;
+                    if (index >= videos.length) {
+                        index = 0;
+                    }
+                    videos[index].style.display = "block";
+                    setTimeout(switchVideo, 5000);
+                }
+
+                for (var i = 1; i < videos.length; i++) {
+                    videos[i].style.display = "none";
+                }
+
+                setTimeout(switchVideo, 5000); 
+            </script> -->
             <div class="content conten1">
                 <div class="content-about content-about-title">
                     <span>
@@ -128,7 +174,7 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Nó miễn phí và dễ dàng để đăng một công việc. 
+                            Nó miễn phí và dễ dàng để đăng một công việc.
                             Chỉ cần điền tiêu đề, mô tả và ngân sách. Bạn đã
                             có thể đăng bài của riêng mình.
                         </div>
@@ -141,9 +187,9 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Công việc dù lơn hay nhỏ đều đưuọc phân chia theo 
+                            Công việc dù lơn hay nhỏ đều đưuọc phân chia theo
                             các kỹ năng của bạn, với hơn 1800+ kỹ năng
-                            Không có công việc nào là quá phức tạp. Chúng ta có thể hoàn thành nó! 
+                            Không có công việc nào là quá phức tạp. Chúng ta có thể hoàn thành nó!
                         </div>
                     </div>
                     <div class="content-about-item content-about-item-first-third">
@@ -154,8 +200,8 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Chỉ thanh toán cho công việc khi nó đã được 
-                            hoàn thành và bạn hài lòng 100% với chất 
+                            Chỉ thanh toán cho công việc khi nó đã được
+                            hoàn thành và bạn hài lòng 100% với chất
                             lượng bằng cách sử dụng hệ thống thanh toán của chúng tôi.
                         </div>
                     </div>
@@ -167,9 +213,9 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Đội ngũ tuyển dụng tài năng của chúng tôi 
-                            có thể giúp bạn tìm được người làm việc tự 
-                            do tốt nhất cho công việc và các cộng sự 
+                            Đội ngũ tuyển dụng tài năng của chúng tôi
+                            có thể giúp bạn tìm được người làm việc tự
+                            do tốt nhất cho công việc và các cộng sự
                             kỹ thuật của chúng tôi thậm chí có thể quản lý dự án cho bạn.
                         </div>
                     </div>
@@ -190,8 +236,8 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Tìm các chuyên gia mà bạn có thể tin tưởng bằng 
-                            cách duyệt qua các mẫu công việc trước đây của 
+                            Tìm các chuyên gia mà bạn có thể tin tưởng bằng
+                            cách duyệt qua các mẫu công việc trước đây của
                             họ và đọc các bài đánh giá hồ sơ của họ.
                         </div>
                     </div>
@@ -203,8 +249,8 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Nhận báo giá miễn phí từ các dịch giả tự do tài 
-                            năng của chúng tôi một cách nhanh chóng. 80% dự 
+                            Nhận báo giá miễn phí từ các dịch giả tự do tài
+                            năng của chúng tôi một cách nhanh chóng. 80% dự
                             án được đấu thầu trong vòng 60 giây.
                         </div>
                     </div>
@@ -216,7 +262,7 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            JobsGo hiện đang được sự tin tưởng của 8 tỉ người 
+                            JobsGo hiện đang được sự tin tưởng của 8 tỉ người
                             với những Freelancer chất lượng nhất.
                         </div>
                     </div>
@@ -228,9 +274,9 @@
                             </span>
                         </div>
                         <div class="content-about-item-desc">
-                            Luôn cập nhật và liên tục với trình theo dõi thời 
-                            gian và ứng dụng dành cho thiết bị di động của 
-                            chúng tôi. Luôn biết những người làm nghề tự 
+                            Luôn cập nhật và liên tục với trình theo dõi thời
+                            gian và ứng dụng dành cho thiết bị di động của
+                            chúng tôi. Luôn biết những người làm nghề tự
                             do đang làm gì.
                         </div>
                     </div>
@@ -245,110 +291,214 @@
                         Xem qua một số cảm hứng từ hơn 1800 kỹ năng
                     </span>
                 </div>
+
+
                 <div class="content-job">
+                    <ul class="image-grid">
+                        <li class="grid-item">
+                            <img src="./asset/img/ai-generated-image.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>AI generated art. <br>$200 USD in 7 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/wordpress-website.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Wordpress website. <br>
+                                $125 USD in 1 day.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/interior-3d-model.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Interior 3D model. <br>
+                                $350 USD in 7 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/product-3d-modelling.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Packaging design. <br>
+                                $2500 USD in 30 days</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/mobile-app.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Mobile app. <br>
+                                $21000 USD in 60 days.</h3>
 
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/character-illustration.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Character illustration. <br>
+                                $60 USD in 5 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/book-cover-design.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Book cover design. <br>
+                                $25 USD in 3 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/product-3d-modelling.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Product 3D modelling. <br>
+                                $430 USD in 3 weeks.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/ai-generated-illustration.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>AI generated illustration. <br>
+                                $12 USD in 6 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/album-cover.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Album cover. <br>
+                                $110 USD in 9 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/architectural-design.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Architectural design. <br>
+                                $5000 USD in 30 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/video-production.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Video production. <br>
+                                $1960 USD in 30 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/shopify-website.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Shopify website. <br>
+                                $300 USD in 7 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/character-illustration.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>AI generated image. <br>
+                                $200 USD in 8 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/seo-expert.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>SEO expert. <br>
+                                $100 USD in 3 days.</h3>
+                        </li>
+                        <li class="grid-item">
+                            <img src="./asset/img/label-design.png" alt="">
+                            <a class="learn-more" href="#">Tìm hiểu thêm</a>
+                            <h3>Label design. <br>
+                                $100 USD in 7 days.</h3>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="content">
+    </div>
+    <div class="content">
 
-            </div>
-        </main>
+    </div>
+    </main>
 
-        <footer>
-            <div class="footer-one">
-                <div class="footer-one-content">
-                    <ul class="footer-one-content-list">
-                        <li class="footer-one-content-item">
-                            <img src="./asset/img/logo.png" alt="">
-                        </li>
-                        <li class="footer-one-content-item">
-                            <a href="#"><i class="fa-solid fa-earth-americas"></i> Vietnam / Vietnamese</a>
-                        </li>
-                        <li class="footer-one-content-item">
-                            <a href="#"><i class="fa-solid fa-circle-question"></i> Help & Support</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-one-content">
-                    <ul class="footer-one-content-work-list">
-                        <h2>Việc làm</h2>
-                        <li class="footer-one-content-work-item"><a href="#">Thể Loại</a></li>
-                        <li class="footer-one-content-work-item"><a href="#">Doanh nghiệp</a></li>
-                        <li class="footer-one-content-work-item"><a href="#">Cuộc thi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-one-content">
-                    <ul class="footer-one-content-about-list">
-                        <h2>Về</h2>
-                        <li class="footer-one-content-about-item"><a href="#">Về chúng tôi</a></li>
-                        <li class="footer-one-content-about-item"><a href="#">Bảo mật</a></li>
-                        <li class="footer-one-content-about-item"><a href="#">team</a></li>
-                    </ul>
-                </div>
-                <div class="footer-one-content footer-one-content-term">
-                    <ul class="footer-one-content-term-list">
-                        <h2>Điều khoản</h2>
-                        <li class="footer-one-content-term-item"><a href="#">Chính sách bảo mật</a></li>
-                        <li class="footer-one-content-term-item"><a href="#">Các điều khoản và điều kiện</a></li>
-                        <li class="footer-one-content-term-item"><a href="#">Chính sách bản quyền</a></li>
-                    </ul>
-                </div>
-                <div class="footer-one-content footer-one-content-partners">
-                    <ul class="footer-one-content-partners-list">
-                        <h2>Đối tác</h2>
-                        <li class="footer-one-content-partners-item">
-                            <a href="#">google</a>
-                        </li>
-                        <li class="footer-one-content-partners-item">
-                            <a href="#">nasa</a>
-                        </li>
-                        <li class="footer-one-content-partners-item">
-                            <a href="#">mars</a>
-                        </li>
-                        <li class="footer-one-content-partners-item">
-                            <a href="#">alien</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-one-content footer-one-content-app">
-                    <ul class="footer-one-content-app-list">
-                        <h2>Ứng dụng</h2>
-                        <li class="footer-one-content-app-item">
-                            <a href="#"><img src="./asset/img/app_store.png" alt=""></a>
-                        </li>
-                        <li class="footer-one-content-app-item">
-                            <a href="#"><img src="./asset/img/google_play.png" alt=""></a>
-                        </li>
-                        <li class="footer-one-content-app-item">
-                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-facebook"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-twitter"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-youtube"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-insta"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="footer-one">
+            <div class="footer-one-content">
+                <ul class="footer-one-content-list">
+                    <li class="footer-one-content-item">
+                        <img src="./asset/img/logo.png" alt="">
+                    </li>
+                    <li class="footer-one-content-item">
+                        <a href="#"><i class="fa-solid fa-earth-americas"></i> Vietnam / Vietnamese</a>
+                    </li>
+                    <li class="footer-one-content-item">
+                        <a href="#"><i class="fa-solid fa-circle-question"></i> Help & Support</a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-two">
-                <div class="footer-two-content">
-                    <span>
-                        423423 <br>
-                        Người dùng
-                    </span>
-                </div>
-                <div class="footer-two-content">
-                    <span>
-                        463 <br>
-                        Số lượng công việc đã đăng
-                    </span>
-                </div>
-                <div class="footer-two-content">
-                    <span>
-                        JobsGo ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759) <br>
-                        Copyright © 2023 Freelancer Technology Pty Limited (ACN 142 189 759)
-                    </span>
-                </div>
+            <div class="footer-one-content">
+                <ul class="footer-one-content-work-list">
+                    <h2>Việc làm</h2>
+                    <li class="footer-one-content-work-item"><a href="#">Thể Loại</a></li>
+                    <li class="footer-one-content-work-item"><a href="#">Doanh nghiệp</a></li>
+                    <li class="footer-one-content-work-item"><a href="#">Cuộc thi</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer-one-content">
+                <ul class="footer-one-content-about-list">
+                    <h2>Về</h2>
+                    <li class="footer-one-content-about-item"><a href="#">Về chúng tôi</a></li>
+                    <li class="footer-one-content-about-item"><a href="#">Bảo mật</a></li>
+                    <li class="footer-one-content-about-item"><a href="#">team</a></li>
+                </ul>
+            </div>
+            <div class="footer-one-content footer-one-content-term">
+                <ul class="footer-one-content-term-list">
+                    <h2>Điều khoản</h2>
+                    <li class="footer-one-content-term-item"><a href="#">Chính sách bảo mật</a></li>
+                    <li class="footer-one-content-term-item"><a href="#">Các điều khoản và điều kiện</a></li>
+                    <li class="footer-one-content-term-item"><a href="#">Chính sách bản quyền</a></li>
+                </ul>
+            </div>
+            <div class="footer-one-content footer-one-content-partners">
+                <ul class="footer-one-content-partners-list">
+                    <h2>Đối tác</h2>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">google</a>
+                    </li>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">nasa</a>
+                    </li>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">mars</a>
+                    </li>
+                    <li class="footer-one-content-partners-item">
+                        <a href="#">alien</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-one-content footer-one-content-app">
+                <ul class="footer-one-content-app-list">
+                    <h2>Ứng dụng</h2>
+                    <li class="footer-one-content-app-item">
+                        <a href="#"><img src="./asset/img/app_store.png" alt=""></a>
+                    </li>
+                    <li class="footer-one-content-app-item">
+                        <a href="#"><img src="./asset/img/google_play.png" alt=""></a>
+                    </li>
+                    <li class="footer-one-content-app-item">
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-facebook"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-twitter"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-youtube"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-insta"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="footer-two-content">
+                <span>
+                    423423 <br>
+                    Người dùng
+                </span>
+            </div>
+            <div class="footer-two-content">
+                <span>
+                    463 <br>
+                    Số lượng công việc đã đăng
+                </span>
+            </div>
+            <div class="footer-two-content">
+                <span>
+                    JobsGo ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759) <br>
+                    Copyright © 2023 Freelancer Technology Pty Limited (ACN 142 189 759)
+                </span>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 
