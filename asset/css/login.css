@@ -15,22 +15,13 @@ html {
 }
 
 body {
-  background-image: url('/JobsGO/asset/img/JobsGO.jpg');
+  background-image: url("/asset/img/JobsGO.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-header .logo{
-  width: 200px;
-  height: 60px;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 20px;
-
-}
-header .logo a{
-  color: orange;
-  text-decoration: none;
+header .logo img{
+  width: 250px;
 }
 .auth-form {
   position: absolute;

@@ -199,9 +199,10 @@ ul {
 }
 
 /* --------------------------------- NHÀ TUYỂN DỤNG---------------------------------------------- */
+
 .information-Employer__img {
-    margin: 1.3rem;
-    width: 97%;
+    margin: 1.5rem;
+    width: 110rem;
     height: 50rem;
     background-repeat: no-repeat;
     background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');

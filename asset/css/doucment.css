@@ -1,12 +1,12 @@
-
 /* ---------------------------- HEADER------------------------------------------------------- */
 header {
     /* position: fixed;
     top: 0; */
     width: 100%;
+    font-size: 1.5rem;
 }
 
-/* navbar */
+/* ----------------------------------------navbar-----------------------------*/
 .navbar {
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ ul li {
 }
 
 .navbar-item-up a {
-    color: #6077A6;
+    color: #3d578d;
 }
 
 .navbar-item-up-first {
@@ -49,7 +49,7 @@ ul li {
 }
 
 .navbar-item-list-item {
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 .8rem;
     min-height: 3.4rem;
     display: inline-flex;
@@ -65,20 +65,54 @@ ul li {
     position: relative;
 }
 
-.navbar-item-list-item-dash::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1.6rem;
-    border-right: 1px solid #6077A6;
-    top: 5;
-    right: 7.5rem;
+.navbar-item-list-item-user img{
+    width: 2.2rem;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item-list-item-user span{
+    color: #3d578d;
+    padding-left: 1rem;
+}
+
+.navbar-item-up-second .navbar-item-list-item a:hover, 
+.navbar-item-up-second .navbar-item-list-item span:hover{
     opacity: 0.7;
+    cursor: pointer;
+}
+
+.navbar-item-list-item-user{
+    position: relative;
+}
+
+.navbar-item-list-item-user:hover .navbar-item-list-item-user-list{
+    display: block;
+}
+
+.navbar-item-list-item-user-list{
+    background-color: rgb(255, 255, 255);
+    width: 13rem;
+    position: absolute;
+    top: 3rem;
+    z-index: 1;
+    padding-left: 0;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.navbar-item-list-item-user-list li{
+    padding: 1rem;
+}
+
+.hide{
+    margin-top: 1.8rem;
+    display: none;
 }
 
 
 .navbar-item-down {
-    background-color: #6077A6;
+    background-color: #3d578d;
 }
 
 .navbar-item-down a {
@@ -104,13 +138,14 @@ ul li {
     background-color: var(--white-color);
     top: 4rem;
     display: none;
+    z-index: 1;
 }
 
-.navbar-item-list-item-find:hover .navbar-item-list-item-info1 {
+.navbar-item-list-item-company:hover .navbar-item-list-item-info1 {
     display: block;
 }
 
-.navbar-item-list-item-find:hover {
+.navbar-item-list-item-company:hover {
     background-color: #819bd1;
 }
 
@@ -120,13 +155,14 @@ ul li {
     background-color: var(--white-color);
     top: 4rem;
     display: none;
+    z-index: 1;
 }
 
-.navbar-item-list-item-hire:hover .navbar-item-list-item-info2 {
+.navbar-item-list-item-employer:hover .navbar-item-list-item-info2 {
     display: block;
 }
 
-.navbar-item-list-item-hire:hover {
+.navbar-item-list-item-employer:hover {
     background-color: #819bd1;
 }
 
@@ -136,13 +172,14 @@ ul li {
     background-color: var(--white-color);
     top: 4rem;
     display: none;
+    z-index: 1;
 }
 
-.navbar-item-list-item-idea:hover .navbar-item-list-item-info3 {
+.navbar-item-list-item-work:hover .navbar-item-list-item-info3 {
     display: block;
 }
 
-.navbar-item-list-item-idea:hover {
+.navbar-item-list-item-work:hover {
     background-color: #819bd1;
 }
 
@@ -152,13 +189,14 @@ ul li {
     background-color: var(--white-color);
     top: 4rem;
     display: none;
+    z-index: 1;
 }
 
-.navbar-item-list-item-about:hover .navbar-item-list-item-info4 {
+.navbar-item-list-item-cv-profile:hover .navbar-item-list-item-info4 {
     display: block;
 }
 
-.navbar-item-list-item-about:hover {
+.navbar-item-list-item-cv-profile:hover {
     background-color: #819bd1;
 }
 
@@ -173,7 +211,32 @@ ul li {
 .navbar-item-list-item-info-item {
     padding: 1rem 1rem;
 }
+.navbar-item-list-item-blog:hover {
+    background-color: #819bd1;
+}
 
+.navbar-item-list-item-info5 {
+    position: absolute;
+    width: 20rem;
+    background-color: var(--white-color);
+    top: 4rem;
+    display: none;
+    z-index: 1;
+}
+
+.navbar-item-list-item-blog:hover .navbar-item-list-item-info5 {
+    display: block;
+}
+
+
+
+.item2{
+    color: #3d578d;
+}
+
+.item2:hover{
+    cursor: pointer;
+}
 /* --------------------------- PAGE ------------------------------------------------ */
 main {
     display: flex;

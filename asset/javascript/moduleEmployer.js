@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function logout () {
     var btnYes = document.querySelector('#btnYes');
     btnYes.addEventListener('click', logout)
     function logout() {
-        window.location.href = "/JobsGO/login.html"
+        window.location.href = "index.html"
     }
 });
 
@@ -127,8 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //----------------------------------- Nhấn vào logo trở về page-home --------------------------------
 window.onload =  function () {
-    var backHome = this.document.querySelector("#back-home");
+    var backHome = document.querySelector("#back-home");
     backHome.addEventListener('click',function(){
-        window.location.href = "./index.html"
+        window.location.href = "index.html";
     })
 }
