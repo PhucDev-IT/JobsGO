@@ -1,3 +1,4 @@
+//-------------------------- QUẢN LÝ ĐĂNG BÀI TUYỂN DỤNG ---------------------------------------------------
 document.addEventListener('DOMContentLoaded', function showPostForm() {
     var BtnPost = document.querySelector('#post-btn');
     var postForm = document.querySelector('.modal-post');
@@ -11,27 +12,29 @@ document.addEventListener('DOMContentLoaded', function showPostForm() {
     });
 });
 
+// -------------------- Khi nhấn đăng xuất ---------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function logout () {
     var btnlogout = document.getElementById('btn-logout');
     btnlogout.addEventListener('click', function show() {
-        var configrmation = document.querySelector('.modal-logout');
+        var configrmation = document.querySelector('.modal-logout-container');
         configrmation.style = "visibility: active";
     })
 
-    var btnYes = document.querySelector('#no-btn')
-    btnYes.addEventListener('click', function hideLogoutConfirmation() {
-        var confirmation = document.querySelector('.modal-logout');
+    var btnNo = document.querySelector('#btnNo')
+    btnNo.addEventListener('click', function hideLogoutConfirmation() {
+        var confirmation = document.querySelector('.modal-logout-container');
         confirmation.style = 'visibility: hidden';
     })
 
-    var btnNo = document.querySelector('#yes-btn');
-    btnNo.addEventListener('click', logout)
+    var btnYes = document.querySelector('#btnYes');
+    btnYes.addEventListener('click', logout)
     function logout() {
         window.location.href = "/JobsGO/login.html"
     }
 });
 
-//Thay đổi trạng thái hoạt động của doanh nghiệp
+//------------------Thay đổi trạng thái hoạt động của doanh nghiệp-------------------------------------------------
+
 document.addEventListener('DOMContentLoaded', function () {
     var selectionStatus = document.getElementById("switch-status");
     var statusOn = document.getElementById('status-name-on');
@@ -121,3 +124,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 });
+
+//----------------------------------- Nhấn vào logo trở về page-home --------------------------------
+window.onload =  function () {
+    var backHome = this.document.querySelector("#back-home");
+    backHome.addEventListener('click',function(){
+        window.location.href = "./index.html"
+    })
+}

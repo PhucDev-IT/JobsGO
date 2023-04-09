@@ -1,0 +1,234 @@
+
+/* ---------------------------- HEADER------------------------------------------------------- */
+header {
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-item {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+.navbar-item-up {
+    background-color: white;
+    justify-content: space-between;
+}
+
+.navbar-item-up a {
+    color: #6077A6;
+}
+
+.navbar-item-up-first {
+    margin-left: 20px;
+}
+
+.navbar-item-up-second {
+    margin-right: 2rem;
+    position: relative;
+    color: var(--white-color);
+}
+
+.navbar-item-up-first img {
+    width: 13rem;
+}
+
+.navbar-item-list-item {
+    font-weight: 300;
+    margin: 0 .8rem;
+    min-height: 3.4rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-item-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: .8rem;
+    position: relative;
+}
+
+.navbar-item-list-item-dash::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.6rem;
+    border-right: 1px solid #6077A6;
+    top: 5;
+    right: 7.5rem;
+    opacity: 0.7;
+}
+
+
+.navbar-item-down {
+    background-color: #6077A6;
+}
+
+.navbar-item-down a {
+    color: var(--white-color);
+}
+
+
+.navbar-item-down .navbar-item-list {
+    margin: 0 auto;
+}
+
+.navbar-item-down .navbar-item-list .navbar-item-list-item {
+    padding: 0 4rem;
+}
+
+.navbar-item-down .navbar-item-list-item {
+    position: relative;
+}
+
+.navbar-item-list-item-info1 {
+    position: absolute;
+    width: 20rem;
+    background-color: var(--white-color);
+    top: 4rem;
+    display: none;
+}
+
+.navbar-item-list-item-find:hover .navbar-item-list-item-info1 {
+    display: block;
+}
+
+.navbar-item-list-item-find:hover {
+    background-color: #819bd1;
+}
+
+.navbar-item-list-item-info2 {
+    position: absolute;
+    width: 20rem;
+    background-color: var(--white-color);
+    top: 4rem;
+    display: none;
+}
+
+.navbar-item-list-item-hire:hover .navbar-item-list-item-info2 {
+    display: block;
+}
+
+.navbar-item-list-item-hire:hover {
+    background-color: #819bd1;
+}
+
+.navbar-item-list-item-info3 {
+    position: absolute;
+    width: 20rem;
+    background-color: var(--white-color);
+    top: 4rem;
+    display: none;
+}
+
+.navbar-item-list-item-idea:hover .navbar-item-list-item-info3 {
+    display: block;
+}
+
+.navbar-item-list-item-idea:hover {
+    background-color: #819bd1;
+}
+
+.navbar-item-list-item-info4 {
+    position: absolute;
+    width: 20rem;
+    background-color: var(--white-color);
+    top: 4rem;
+    display: none;
+}
+
+.navbar-item-list-item-about:hover .navbar-item-list-item-info4 {
+    display: block;
+}
+
+.navbar-item-list-item-about:hover {
+    background-color: #819bd1;
+}
+
+.navbar-item-list-item-info-list {
+    padding: 0;
+}
+
+.navbar-item-list-item-info-list a {
+    color: #333;
+}
+
+.navbar-item-list-item-info-item {
+    padding: 1rem 1rem;
+}
+
+/* ----------------------------------------- BLOG IT-------------------------------------- */
+main{
+    display: flex;
+    justify-content: center;
+}
+.container-blog{
+    width: 80%;
+    margin-top: 2rem;
+    background-color: #dadce4;
+}
+.container-blog .grid-container{
+display: flex;
+justify-content: space-between;
+}
+.grid-container .post{
+    width: 28rem;
+    height: 28rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.post-content{
+    width: 25rem;
+font-size: 1.6rem;
+line-height: 1.5;
+}
+.post-content header{
+    
+    text-align: center;
+}
+/* ------- */
+.new-post-wrapper{
+    width: 30rem;
+    line-height: 1.3;
+    font-size: 1.4rem;
+    border: 1px solid green;
+}
+.new-post-wrapper img{
+    width: 30rem;  
+}
+
+.new-post-container header a{
+    color: #2c2929;
+}
+
+.new-post-container-content .text-light{
+margin: 1rem;
+}
+
+.new-post-container-content .text-right{
+    text-align: right;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
