@@ -1,38 +1,41 @@
-function showPostForm(){
+//-------------------------- QUẢN LÝ ĐĂNG BÀI TUYỂN DỤNG ---------------------------------------------------
+document.addEventListener('DOMContentLoaded', function showPostForm() {
     var BtnPost = document.querySelector('#post-btn');
-        var postForm = document.querySelector('.modal-post');
-        var btnClose = document.querySelector('.modal-close');
-        BtnPost.addEventListener('click', function () {
-            postForm.style = "visibility:active";
-        })
+    var postForm = document.querySelector('.modal-post');
+    var btnClose = document.querySelector('.modal-close');
+    BtnPost.addEventListener('click', function () {
+        postForm.style = "visibility:active";
+    })
 
-        btnClose.addEventListener('click', function () {
-            postForm.style.display = "none";
-        });
-}
+    btnClose.addEventListener('click', function () {
+        postForm.style = "visibility:hidden";
+    });
+});
 
-function logout(){
+// -------------------- Khi nhấn đăng xuất ---------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function logout () {
     var btnlogout = document.getElementById('btn-logout');
     btnlogout.addEventListener('click', function show() {
-        var configrmation = document.querySelector('.modal-logout');
+        var configrmation = document.querySelector('.modal-logout-container');
         configrmation.style = "visibility: active";
     })
 
-    var btnYes = document.querySelector('#no-btn')
-    btnYes.addEventListener('click', function hideLogoutConfirmation() {
-        var confirmation = document.querySelector('.modal-logout');
+    var btnNo = document.querySelector('#btnNo')
+    btnNo.addEventListener('click', function hideLogoutConfirmation() {
+        var confirmation = document.querySelector('.modal-logout-container');
         confirmation.style = 'visibility: hidden';
     })
 
-    var btnNo = document.querySelector('#yes-btn');
-    btnNo.addEventListener('click', logout)
+    var btnYes = document.querySelector('#btnYes');
+    btnYes.addEventListener('click', logout)
     function logout() {
         window.location.href = "/JobsGO/login.html"
     }
-}
+});
 
-//Thay đổi trạng thái hoạt động của doanh nghiệp
-function ToggleSwitchStatus(){
+//------------------Thay đổi trạng thái hoạt động của doanh nghiệp-------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', function () {
     var selectionStatus = document.getElementById("switch-status");
     var statusOn = document.getElementById('status-name-on');
     var statusOff = document.getElementById('status-name-off');
@@ -45,66 +48,87 @@ function ToggleSwitchStatus(){
             statusOn.style.display = 'none';
         }
     })
-}
+});
 //------------------------------Chuyển đổi form khi chọn list các chức năng----------------------------------
-function ConvertForm(){
-  // Click chọn thông tin doanh nghiệp
-  var clickInforEmployer = document.querySelector('#btn-employer');
-  var EmployerForm = document.querySelector('.information-Employer')
+function hiddenForm(){
+    var EmployerForm = document.querySelector('.information-Employer')
+    var AccountForm = document.querySelector('.information-account-form');
+    var chanePassForm = document.querySelector('.changePassword-form');
+    var listPostForm = document.getElementsByClassName('post-management-form');
+    var CandidateForm = document.getElementsByClassName('list-candidate-form');
 
-  clickInforEmployer.addEventListener('click', function () {
-      AccountForm.style.display = 'none';
-      chanePassForm.style.display = "none";
-      // listPostForm.style.display = 'none';
-      EmployerForm.style.display = "block";
-  })
-
-  //  Click chọn thông tin tài khoản
-  var btnInforAccount = document.querySelector('#js-infor-account');
-  var AccountForm = document.querySelector('.information-account-form');
-
-  btnInforAccount.addEventListener('click', function () {
-      EmployerForm.style.display = "none";
-      chanePassForm.style.display = "none";
-      // listPostForm.style.display = 'none';
-      AccountForm.style.display = 'block';
-  });
-
-  // Chọn form đổi mật khẩu
-  var chanePassForm = document.querySelector('.changePassword-form');
-  var btnChangePass = document.querySelector('#js-change-password');
-
-  btnChangePass.addEventListener('click', function () {
-      EmployerForm.style.display = "none";
-      AccountForm.style.display = 'none';
-      // listPostForm.style.display = 'none';
-      chanePassForm.style.display = "block";
-  });
-
-  var btnCadidate = document.querySelector('#js-btn-candidate');
-  //Click chọn Danh sách các JOB
-  var listPostForm = document.getElementsByClassName('post-management-form');
-  var btnListJobs = document.getElementById('js-btn-list-jobs');
-  btnCadidate.addEventListener('click',function(){
-      EmployerForm.style.display = "none";
-      AccountForm.style.display = 'none';
-      chanePassForm.style.display = "none";
-      listPostForm.style.display = "block";
-  })
-  
+    AccountForm.style.display = 'none';
+    chanePassForm.style.display = "none";
+    listPostForm[0].style.display = "none";
+    CandidateForm[0].style.display = "none";
+    EmployerForm.style.display = "none";
 }
-//------ KHÓA - MỞ BÀI VIẾT----------------- 
-function openlockPost(){
-    var btnLockPost = getElementById('btn-lock');
-    var iconOpen = querySelector('#js-post-open');
-    var iconLock = querySelector('#js-post-lock');
+var EmployerForm = document.querySelector('.information-Employer')
+var AccountForm = document.querySelector('.information-account-form');
+var chanePassForm = document.querySelector('.changePassword-form');
+var listPostForm = document.getElementsByClassName('post-management-form');
+var CandidateForm = document.getElementsByClassName('list-candidate-form');
+
+//Dùng DOM để giải quyết vấn đề click 2 lần mới có sự kiện xảy ra
+document.addEventListener('DOMContentLoaded', function ConvertForm () {
+
+    // Click chọn thông tin doanh nghiệp
+    var clickInforEmployer = document.querySelector('#btn-employer');
+    clickInforEmployer.addEventListener('click', function () {
+        hiddenForm();
+        EmployerForm.style.display = "block";
+    })
+
+    //  Click chọn thông tin tài khoản
+    var btnInforAccount = document.querySelector('#js-infor-account');
+    btnInforAccount.addEventListener('click', function () {
+        hiddenForm();
+        AccountForm.style.display = 'block';
+    });
+
+    // Chọn form đổi mật khẩu
+    var btnChangePass = document.querySelector('#js-change-password');
+    btnChangePass.addEventListener('click', function () {
+        hiddenForm();
+        chanePassForm.style.display = "block";
+    });
+
+    //Click chọn Danh sách các JOB
+    var btnListJobs = document.getElementById('js-btn-list-jobs');
+    btnListJobs.addEventListener('click', function () {
+        hiddenForm();
+        listPostForm[0].style.display = "block";
+
+    })
+
+    //Click chọn danh sách các ứng viên
+    var btnCandidate = document.getElementById('js-btn-candidate');
+    btnCandidate.addEventListener('click',function(){
+        hiddenForm();
+        CandidateForm[0].style.display = "block";
+    })
+});
+
+//-------------------------------------------- KHÓA - MỞ BÀI VIẾT---------------------------------------------- 
+document.addEventListener('DOMContentLoaded', function () {
+    var btnLockPost = document.getElementById('btn-lock');
+    var iconOpen = document.querySelector('#js-post-open');
+    var iconLock = document.querySelector('#js-post-lock');
     btnLockPost.addEventListener('click', function () {
-        if (iconLock.style.display = "none") {
+        if (iconLock.style.display == "none") {
             iconOpen.style.display = "none"
             iconLock.style.display = "inline"
         } else {
             iconOpen.style.display = "inline"
             iconLock.style.display = "none"
         }
+    })
+});
+
+//----------------------------------- Nhấn vào logo trở về page-home --------------------------------
+window.onload =  function () {
+    var backHome = this.document.querySelector("#back-home");
+    backHome.addEventListener('click',function(){
+        window.location.href = "./index.html"
     })
 }

@@ -1,4 +1,5 @@
 html {
+    font-size: 62.5%;
     -webkit-user-select: none;
     /* Cho các trình duyệt dựa trên WebKit */
     -moz-user-select: none;
@@ -13,160 +14,196 @@ body {
     background-color: #DDDDDD;
     font-family: 'Inter', sans-serif;
     margin: 0;
+
 }
 
 
+header{
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
-    padding: 10px;
-    box-sizing: border-box;
+    width: auto;
+    margin: 0 auto;
 }
 
-header .content {
+/* navbar */
+.navbar{
     display: flex;
+    flex-direction: column;
+}
+
+.navbar-item{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+ul li{
+    list-style: none;
+}
+
+.navbar-item-up{
+    background-color: #F6F7FC;
     justify-content: space-between;
+    font-size: 1.3rem;
 }
 
-#logo {
-    width: 100px;
-    height: 40px;
-    background-image: url("/JobsGo/asset/img/logo.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 10px;
-    box-sizing: border-box;
-
+.navbar-item-up a{
+    color: #6077A6;
 }
 
-#display-Email {
-    color: white;
-    font-size: 27px;
-    font-weight: bold
+.navbar-item-up-first{
+    margin-left: 20px;
 }
 
+.navbar-item-up-second{
+    margin-right: 2rem;
+    position: relative;
+    color: var(--white-color);
+}
+
+.navbar-item-up-first img{
+    margin-top: -0.8rem;
+    width: 16rem;
+}
+
+.navbar-item-list-item{
+    font-weight: 300;
+    margin: 0 .8rem;
+    min-height: 3.4rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-item-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: .8rem;
+    position: relative;
+}
+
+.navbar-item-list-item-dash::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.6rem;
+    border-right: 1px solid #6077A6;
+    top: 5;
+    right: 7.5rem;
+    opacity: 0.7;
+}
+
+/* ------------------------------------------ */
 #container {
-    margin-top: 80px;
+    margin-top: 3rem;
     display: flex;
     overflow: hidden;
 
 }
 
 #main {
-    width: 1150px;
-    /* min-heigt */
-    margin-left: 10px;
+    width: 115rem;
+    min-height: 50rem;
+    margin-left: 1rem;
     background-color: white;
-   
+    margin-bottom: 5rem;
+    border-radius: 5px;
 }
 
 .list-group {
-    width: 250px;
-    height: 500px;
-    margin-left: 30px;
-    border-radius: 5px;
+    width: 27rem;
+    height: 40rem;
+    margin-left: 3rem;
+    border-radius: 0.5rem;
     background-color: white;
+}
 
+.list-group-item-heading {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list-group-item-heading button {
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
 
 .list-group-item-heading :nth-child(1) {
-    width: 50%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #ffffff;
     background-color: #007bff;
-    border: none;
-    float: left;
-    border-radius: 3px;
+    border-radius: 0.2rem;
 }
 
 .list-group-item-heading :nth-child(2) {
-    width: 50%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: rgb(170, 166, 166);
     background-color: rgb(255, 255, 255);
-    border: none;
-    float: left;
-
 }
 
 .list-group-item-heading :nth-child(2) i {
-    width: 30px;
-    height: 30px;
-    margin-right: 4px;
+    width: 3rem;
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
 }
 
-.list-group-item-title {
-    width: 100%;
-    height: 40px;
-    color: red;
-    background-color: #007bff;
-}
-
 .list-group-item {
-    margin-top: 50px;
+    margin-top: 4.5rem;
     width: 100%;
-    height: 400px;
+    /* height: 40.5rem; */
+    font-size: 1.6rem;
     background-color: white;
 }
 
+.list-group-item__account {
+    margin-top: -3.5rem;
+}
+
 .text-title {
-    height: 40px;
+    margin-top: -1.5rem;
+    height: 4rem;
     color: white;
-    font-size: 20px;
+    font-size: 1.8rem;
     font-weight: 600;
-    text-align: center;
-    padding-top: 7px;
     background-color: #007bff;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .list-group-item i {
     text-align: center;
-    padding-top: 10px;
-    width: 30px;
-    height: 40px;
+    padding-top: 1rem;
+    width: 3.6rem;
+    height: 4rem;
     background-color: rgb(179, 134, 134);
-    margin-right: 10px;
+    margin-right: 2rem;
     border-radius: 0px 50% 50% 0px;
     box-sizing: border-box;
 }
 
 ul {
-    margin-top: 1px;
-}
-
-ul li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
+    margin-top: 0.1px;
 }
 
 .list-group-item ul li {
-
-    padding-left: 0px;
-    height: 40px;
+    height: 4rem;
     background-color: #C0C0C0;
-    margin-bottom: 4px;
+    margin-bottom: 0.1rem;
 }
 
+/* --------------------------------- NHÀ TUYỂN DỤNG---------------------------------------------- */
 .information-Employer__img {
-    margin: 10px;
-    width: 1120px;
-    height: 500px;
+    margin: 1.3rem;
+    width: 97%;
+    height: 50rem;
+    background-repeat: no-repeat;
     background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
     background-size: 100%;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -174,28 +211,38 @@ a{
 }
 
 .information-Employer__update {
-    margin-top: 20px;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .information-Employer__update td label {
-    margin-right: 30px;
+    margin-right: 3 rem;
 }
-
+.information-Employer__update tr{
+    padding-bottom: 20rem;
+}
 .information-Employer_btnUpdate {
-    width: 100px;
-    height: 40px;
-    font-size: 17px;
-    border-radius: 5px;
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    border-radius: 0.3rem;
     color: green;
     border-color: green;
-    margin-top: 20px;
-    margin-left: 878px;
-}
+    margin-top: 6rem;
+    margin-left: 90rem;
 
+}
+.information-Employer_btnUpdate:hover{
+    background-color: #e0f194;
+    transition: 0.4s;
+    border-color: #007bff;
+}
+.information-Employer_btnUpdate:active{
+    background-color: #4465a8;
+}
 .list-group li:hover {
     background-color: #FFCCCC;
 }
@@ -207,8 +254,8 @@ a{
 .switch {
     position: relative;
     display: inline-block;
-    width: 45px;
-    height: 20px;
+    width: 2.5rem;
+    height: 1.5rem;
 }
 
 .slider {
@@ -216,34 +263,23 @@ a{
     cursor: pointer;
     top: 0;
     left: 0;
-    right: -4px;
+    right: -1.8rem;
     bottom: 0;
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
+
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 18px;
-    width: 18px;
-    left: 2px;
-    bottom: 1px;
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0.15rem;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-}
-
-.information-Employer__img {
-    margin: 10px;
-    width: 97%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-image: url('https://designlife.vn/wp-content/uploads/2015/02/MG_7373.jpg');
-    background-size: 100%;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    border-radius: 5px;
 }
 
 input:checked+.slider {
@@ -255,14 +291,14 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(2.6rem);
+    -ms-transform: translateX(2.6rem);
+    transform: translateX(2.6rem);
 }
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 30px;
+    border-radius: 2rem;
 }
 
 .slider.round:before {
@@ -271,72 +307,74 @@ input:checked+.slider:before {
 
 .information-Employer__status-switch-name {
     font-size: 19px;
-    padding-left: 10px;
+    padding-left: 2.3rem;
+
 }
 
 .information-Employer__status {
-    margin-top: -8px;
-    margin-left: 40px;
+    margin-top: -1rem;
+    margin-left: 4rem;
     display: flex;
     flex-direction: row;
 }
 
 .information-Employer__status .number-staff {
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .information-Employer__status .number-staff i {
-    margin-top: 20px;
-    margin-right: 7px;
+    margin-top: 2rem;
+    margin-right: 0.8rem;
 }
 
 /* --------------------------------------Thông tin tài khoản --------------------------------------------*/
 .information-account-form h6 {
-    margin-top: 20px;
-    margin-left: 15px;
-    font-size: 30px;
+    margin: 2rem;
+    font-size: 3rem;
 }
 
 .information-account-form .one {
-    width: 400px;
-    height: 150px;
-    margin-top: -20px;
-    margin-left: 30px;
+    width: 43rem;
+    height: 18rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 17rem;
     border: 1px solid #C0C0C0;
     display: flex;
     justify-content: space-between;
     float: left;
 }
 
+.information-account-form .one-information {
+    font-size: 1.5rem;
+}
+
 .information-account-form .one-avatar {
-    margin-top: 4px;
-    margin-left: 19px;
-    width: 140px;
-    height: 140px;
+    margin: 1.5rem;
+    width: 15rem;
+    height: 15rem;
     border: 1px solid black;
     border-radius: 50%;
     background-image: url("https://demoda.vn/wp-content/uploads/2022/02/avatar-anime-cute.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .information-account-form .one-information {
-    width: 240px;
-    height: 150px;
-    padding-top: 25px;
+    width: 24rem;
+    height: 15rem;
+    padding-top: 4rem;
     box-sizing: border-box;
 }
 
 .information-account-form .one-information div {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
 }
 
 .information-account-form .two {
-    width: 600px;
-    height: 150px;
-    margin-top: -20px;
-    margin-left: 550px;
-    border: 1px solid red;
+
+    margin-top: 7rem;
     display: flex;
     justify-content: space-between;
 }
@@ -346,11 +384,27 @@ input:checked+.slider:before {
     flex-direction: column;
 }
 
-.information-account-form .two {
-    display: flex;
-    flex-direction: column;
+.information-account-form .two .row {
+    margin-bottom: 1.5rem;
 }
 
+/* Thiết lập kiểu hiển thị của phần tử */
+.information-account-form .two span,
+.information-account-form .two input {
+    display: inline-block;
+    height: 2.3rem
+}
+
+/* Thiết lập kích thước và margin cho các phần tử */
+.information-account-form .two span {
+    width: 16rem;
+    margin-right: 1rem;
+    font-size: 2.2rem;
+}
+
+.information-account-form .two input {
+    width: calc(100% - 280px);
+}
 
 
 /* Đổi mật khẩu */
@@ -358,54 +412,91 @@ input:checked+.slider:before {
 .changePassword-form-input {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 2.5rem;
 
+}
+
+.changePassword-form-input input {
+    width: 20rem;
+    height: 2rem;
 }
 
 /* ------------------------------------------------- ĐĂNG XUẤT------------------------------------------- */
 
-.modal-logout {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    /* Nằm giữa chiều ngang của thẻ cha */
-    justify-content: center;
+.modal-logout-container {
+    height:100vh;
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    font-size: 1.6rem;
 }
 
-.logout-confirmation {
-    height: 100px;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid black;
-}
+#modal-logout{
+    background:#fff;
+    max-width: 500px;
+    position:relative;
+    left:50%;
+    top:100px;
+    transform:translateX(-50%);
+  }
+  
+  .modal-logout-header{
+    background-color: #6077A6;
+    color: white;
+  
+  }
+  #modal-logout .modal-logout-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 20px;
+    border-bottom: 1px solid #0e0f0f;
+  }
+  #modal-logout .modal-logout-header h3{
+    margin:0;
+  }
+  
+  #modal-logout .modal-logout-body{
+    padding:15px 20px;
+    color:#140808;
+  }
+  .modal-logout-footer{
+    padding:15px;
+    text-align:right;
+  }
+  .modal-logout-footer button{
+    padding:10px 20px;
+    color:#fff;
+    border-radius: 5px;
+    border:none;
+    background-color: #4465a8;
+  }
 
 /* -----------------------------------------Đăng bài------------------------------------------------------------- */
 /* width */
-.modal::-webkit-scrollbar {
+.modal-post::-webkit-scrollbar {
     width: 0px;
 }
 
 /* Track */
-.modal ::-webkit-scrollbar-track {
+.modal-post ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
 /* Handle */
-.modal::-webkit-scrollbar-thumb {
+.modal-post::-webkit-scrollbar-thumb {
     background: #888;
 }
 
 /* Handle on hover */
-.modal::-webkit-scrollbar-thumb:hover {
+.modal-post::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-.modal {
+.modal-post {
+
     position: fixed;
     top: 0;
     right: 0;
@@ -418,41 +509,46 @@ input:checked+.slider:before {
     justify-content: center;
 
 }
-
+.modal-container-post input:focus{
+    outline: none;
+}
 .modal-header {
-    margin-top: -35px;
-    height: 50px;
+    margin-top: -4.1rem;
+    height: 5rem;
     background-color: #6666FF;
     box-sizing: border-box;
 }
 
 .modal-container-post {
-    margin-top: 40px;
-    min-height: 1900px;
+    height: 170rem;
+    width: 70rem;
+    margin-top: 6rem;
+    min-height: 115rem;
     background-color: #ffffff;
     position: relative;
+
 }
 
 .modal-header h5 {
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: 20px;
+    padding-top: 0.7rem;
+    padding-left: 1.3rem;
+    font-size: 2.5rem;
     box-sizing: border-box;
 }
 
 .modal-body .post-information {
-    margin-top: 30px;
-    padding-left: 50px;
+    margin-top: 4rem;
+    padding-left: 9rem;
 
 }
 
 .label-title {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 10px;
+    width: 13rem;
+    height: 3rem;
+    margin-bottom: 0.6rem;
     background-color: #5AA8FF;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,51 +566,55 @@ input:checked+.slider:before {
 .input-form-label {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .input-form-label :nth-child(1) {
-    width: 100px;
-    height: 30px;
-    margin-left: -50px;
+    width: 9rem;
+    height: 3.1rem;
+    margin-left: -9rem;
     background-color: rgb(202, 215, 215);
     border: 1px solid rgb(130, 128, 128);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.6rem;
 }
 
 .post-information-label {
-    height: 50px;
-    margin-left: -50px;
-    margin-bottom: 30px;
+    height: 5rem;
+    margin-left: -9rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
     background-color: #FDF5E6;
-    padding-left: 20px;
-    padding-top: 15px;
-    box-sizing: border-box;
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
 }
-
+.post-information .input-form{
+    margin-top: 4rem;
+}
 .modal-body .post-information .option-input li {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 1.7rem;
 }
 
 .post-information-input input {
-    width: 200px;
-    height: 25px;
+    width: 16rem;
+    height: 3rem;
     border-radius: 3px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-color: green;
-    margin-bottom: 40px;
-    margin-right: 20px;
-}
+    margin-bottom: 2.6rem;
+    margin-right: 2rem;
+}   
 
 .post-information-input label {
-    margin-left: -65px;
-    margin-right: 60px;
+    margin-left: -5.6rem;
+    margin-right: 7rem;
+    font-size: 1.5rem;
 }
 
 .modal-body .post-information .list-checkbox-walfare {
@@ -523,25 +623,27 @@ input:checked+.slider:before {
 }
 
 .modal-body .post-information .list-checkbox-walfare li {
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.67rem;
     width: 33%;
 }
 
 .modal-body .post-information textarea {
-    width: 600px;
+    width: 53rem;
+    border: 1px solid red;
+
 }
 
 #btn-post {
-    margin-top: 50px;
+    margin-top: 3.3rem;
     display: block;
-    width: 200px;
-    height: 40px;
+    width: 13.3rem;
+    height: 2.6rem;
     margin: 0 auto;
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 1.3rem;
     background-color: #FDF5E6;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     border: 1px solid green;
 }
 
@@ -550,74 +652,127 @@ input:checked+.slider:before {
 }
 
 /* ---------------------------------- Quản lý bài viết tuyển dụng ------------------------------------------------------ */
-.post-management-form .number-post{
-    margin-top: -5px;
-margin-left: 15px;
+.post-management-form .number-post {
+    margin-top: -1rem;
+    margin-left: 3rem;
+    font-size: 1.5rem;
 }
-.post-management-form .container{
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 700px;
-    border-radius: 5px;
+
+.post-management-form .container {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    width: 60rem;
+    border-radius: 0.3rem;
     display: flex;
     flex-direction: row;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
-.post-management-form .container img{
-    margin: 10px;
-    width: 150px;
-    height: 150px;
+
+.post-management-form .container img {
+    margin: 1rem;
+    width: 15rem;
+    height: 15rem;
     border: 1px solid black;
+    margin-right: 3rem;
 }
-.post-management-form .container-content{
-margin-left: 20px;
+
+
+.post-management-form .container-content .header-title{
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
+    margin-top: 1rem;
+    margin-left: 0px;
+    font-weight: bold;
 }
-.post-management-form .container-content .header .header-content{
-    margin-top: -45px;
-    margin-left: 30px;
-    font-size: 12px;
+.post-management-form .container-content .header .header-content {
+    margin-top: -1rem;
+    margin-left: 2rem;
+    font-size: 1.3rem;
 }
-.body-information{
-    margin-top: 3px;
-    font-size: 14px;
+
+.body-information {
+    margin-top: 0.2rem;
+    font-size: 1.4rem;
 }
-.container-content .body button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 130px;
-    height: 30px;
-    font-size: 15px;
+
+.container-content .body button {
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+    height: 3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.3rem;
     color: white;
 
 }
-#btn-view-post-detail{
+
+#btn-view-post-detail {
     background-color: #6666FF;
 }
-#btn-remove-post{
+
+#btn-remove-post {
     background-color: #f45b60;
-    margin-right: 150px;
 }
-#btn-lock{
-    width: 60px; 
-    height: 30px; 
+
+#btn-lock {
+    width: 4rem;
+    margin-left: 11rem;
     border: 1px solid yellow;
 }
-#btn-lock:hover{
+
+#btn-lock:hover {
     background-color: #9f9f9f;
 }
-/* footer */
 
+/* ----------------- Danh sách ứng viên--------------------------------------------------------------- */
+.list-candidate-form .header{
+margin: 2rem;
+display: flex;
+justify-content: space-between;
+font-size: 2.8rem;
+}
+.list-candidate-form-number{
+    font-size: 1.5rem;
+    margin-top: -1.8rem;
+    margin-left: 3rem;
+}
+.list-candidate-form .body{
+    width: 95%;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    border: 1px solid rgb(234, 227, 227);
+}
+
+.list-candidate-form .body table thead th{
+    background-color: #5b5858;
+    /* width: 20rem; */
+    color: white;
+}
+
+.list-candidate-form .body tbody tr{
+    height: 3rem;
+}
+.list-candidate-form .body tr:hover{
+    background-color: rgb(141, 245, 122) !important;
+}
+/* ---------------------------------------------------footer------------------------------------ */
+a{
+    text-decoration: none
+    }
+    
+    Ul li{
+    List-style:none;
+    } 
 footer {
     width: 100%;
-    height: 400px;
-    margin-top: 50px;
+    height: 28rem;
+    margin-top: 3.3rem;
     background-color: #333;
     color: #c0bbb2;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 footer a {
@@ -625,8 +780,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #fff;
-    text-decoration: underline;
+    color: var(--white-color);
 }
 
 .footer-one {
@@ -650,7 +804,7 @@ footer a:hover {
 
 .footer-one-content-item {
     padding-top: 15px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .footer-one-content-work-list h2 {
