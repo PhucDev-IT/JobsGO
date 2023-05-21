@@ -240,6 +240,69 @@ header {
     cursor: pointer;
   }
 
+
+  .blank-1{
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: 3rem;
+    display: none;
+    z-index: 1;
+  }
+  .navbar-item-list-item-company:hover .blank-1 {
+    display: block;
+  }
+  
+  .blank-2{
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: -2rem;
+    display: none;
+    z-index: 1;
+  }
+  .navbar-item-list-item-employer:hover .blank-2 {
+    display: block;
+  }
+  
+  .blank-3{
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: -2rem;
+    left: -2rem;
+
+    display: none;
+    z-index: 1;
+  }
+  .navbar-item-list-item-work:hover .blank-3 {
+    display: block;
+  }
+  
+  .blank-4{
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: 3rem;
+    display: none;
+    z-index: 1;
+  }
+  .navbar-item-list-item-cv-profile:hover .blank-4 {
+    display: block;
+  }
+
+  .blank-5{
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: 2rem;
+    display: none;
+    z-index: 1;
+  }
+  .navbar-item-list-item-blog:hover .blank- {
+    display: block;
+  }
+
 /* main */
 
 main {

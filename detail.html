@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/normal.css">
+    <link rel="stylesheet" href="./asset/css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="about">
+        <header>
+        <nav class="navbar">
+            <div class="navbar-item navbar-item-up">
+                <div class="navbar-item-up-first">
+                    <ul class="navbar-item-list">
+                        <li class="navbar-item-list-item"><img src="./asset/img/logo.png" alt=""></li>
+                        <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Cách hoạt động</a>
+                        </li>
+                        <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Duyệt công
+                                việc</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-item-up-second">
+                    <ul class="navbar-item-list">
+                        <li class="navbar-item-list-item"><a href=""><i class="fa-solid fa-bell"></i> Thông báo</a>
+                        </li>
+                        <li class=" navbar-item-list-item navbar-item-list-item-dash"><a href=""><i
+                                    class="fa-solid fa-circle-info"></i> Trợ giúp</a></li>
+
+                        <li id="register" class="navbar-item-list-item hide"><a href="./register.html">Đăng ký</a></li>
+                        <li id="login" class="navbar-item-list-item hide"><a href="./login.html">Đăng nhập</a></li>
+
+                        <li class="navbar-item-list-item navbar-item-list-item-user hide2">
+                            <img src="./asset/img/avatar.png" alt="">
+                            <span>demo user</span>
+                            <ul class="navbar-item-list-item-user-list">
+                                <li class="item1"><a href="EmployerForm.html">Thông tin cá nhân</a></li>
+                                <li id="logout" class="item2"><span>Đăng xuất</span></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-item navbar-item-down">
+                <ul class="navbar-item-list">
+                    <li class="navbar-item-list-item navbar-item-list-item-company">
+                        <a href="">Công ty </a>
+                        <div class="blank-1"></div>
+                        <div class="navbar-item-list-item-info1">
+                            <ul class="navbar-item-list-item-info-list navbar-item-list-item-info1-list">
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info1-item">
+                                    <a href="">Công ty tiêu biểu </a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info1-item">
+                                    <a href="">Tất cả công ty </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-item-list-item navbar-item-list-item-employer">
+                        <a href="">Nhà tuyển dụng </a>
+                        <div class="blank-2"></div>
+                        <div class="navbar-item-list-item-info2">
+                            <ul class="navbar-item-list-item-info-list navbar-item-list-item-info2-list">
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info2-item">
+                                    <a href="">Đăng tin online </a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info2-item">
+                                    <a href="">Tìm hồ sơ </a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-item-list-item navbar-item-list-item-work">
+                        <a href="">Việc làm </a>
+                        <div class="blank-3"></div>
+                        <div class="navbar-item-list-item-info3">
+                            <ul class="navbar-item-list-item-info-list navbar-item-list-item-info3-list">
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
+                                    <a href="">Việc làm mới nhất </a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
+                                    <a href="">Tìm việc làm </a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
+                                    <a href="">Việc làm quản lý</a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
+                                    <a href="">Phỏng vấn </a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
+                                    <a href="">Mức lương</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-item-list-item navbar-item-list-item-cv-profile">
+                        <a href="CreateCV.html">CV/Hồ Sơ</a>
+                        <div class="blank-4"></div>
+                        <div class="navbar-item-list-item-info4">
+                            <ul class="navbar-item-list-item-info-list navbar-item-list-item-info4-list">
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info4-item">
+                                    <a href="CreateCV.html">Tạo CV</a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info4-item">
+                                    <a href="">Sửa lỗi CV</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="navbar-item-list-item navbar-item-list-item-blog">
+                        <a href="blogIT.html">Blog IT</a>
+                        <div class="blank-5"></div>
+                        <div class="navbar-item-list-item-info5">
+                            <ul class="navbar-item-list-item-info-list navbar-item-list-item-info5-list">
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info5-item">
+                                    <a href="blogIT.html">Thông tin</a>
+                                </li>
+                                <li class="navbar-item-list-item-info-item navbar-item-list-item-info5-item">
+                                    <a href="document.html">Tài liệu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+            <div class="main-content">
+                <div class="main-content_left">
+                    <div class="main-content_title">
+                        <p>Chi tiết tuyển dụng</p>
+                    </div>
+                    <div class="main-content_des">
+                        <div class="des-1">
+                            <h2>Mô tả công việc</h2>
+                            <p class="des">
+                                - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam ultricies nisi vel
+                                <br>
+                                - augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                                <br>
+                                - tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+                                <br>
+                                - sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                <br>
+                                - Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                <br>
+                                - faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+                                <br>
+                                - leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+                                <br>
+                                - leo eget bibendum sodales, augue velit cursus nunc,
+                            </p>
+                        </div>
+                        <div class="des-2">
+                            <h2>yêu cầu ứng viên</h2>
+                            <p class="des">
+                                - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam ultricies nisi vel
+                                <br>
+                                - augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                                <br>
+                                - tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+                                <br>
+                                - sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                <br>
+                                - Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                <br>
+                                - faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+                                <br>
+                                - leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+                                <br>
+                                - leo eget bibendum sodales, augue velit cursus nunc,
+                            </p>
+                        </div>
+                        <div class="des-3">
+                            <h2>Quyền lợi</h2>
+                            <p class="des">
+                                - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam ultricies nisi vel
+                                <br>
+                                - augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                                <br>
+                                - tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+                                <br>
+                                - sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                <br>
+                                - Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                <br>
+                                - faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+                                <br>
+                                - leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+                                <br>
+                                - leo eget bibendum sodales, augue velit cursus nunc,
+                            </p>
+                        </div>
+                        <div class="des-4">
+                            <h2>Địa điểm làm việc</h2>
+                            <p class="des">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam ultricies nisi vel
+                                augue. Curabitur ullamcorper
+                            </p>
+                        </div>
+                        <div class="des-5">
+                            <a class="des-5_sub" href="#">Ứng tuyển ngay</a>
+                            <a href="" class="des-5_save">Lưu tin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content_right">
+                    <img src="./asset/img/careerbiulder.png" alt="">
+                    <div class="main-content_right-share">
+                        <h2>Chia sẻ tin tuyển dụng</h2>
+                        <p>Sao chép đường dẫn</p>
+                    </div>
+                    <div class="link">
+                        <input type="text" id="urlInput" value="https://example.com" />
+                        <button id="copyButton" onclick="copyUrl()">Copy</button>
+                    </div>
+                    <div class="other">
+                        <p>chia sẻ qua mạng xã hội</p>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-facebook"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-twitter"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-insta"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-one">
+                <div class="footer-one-content">
+                    <ul class="footer-one-content-list">
+                        <li class="footer-one-content-item">
+                            <img src="./asset/img/logo.png" alt="">
+                        </li>
+                        <li class="footer-one-content-item">
+                            <a href="#"><i class="fa-solid fa-earth-americas"></i> Vietnam / Vietnamese</a>
+                        </li>
+                        <li class="footer-one-content-item">
+                            <a href="#"><i class="fa-solid fa-circle-question"></i> Help & Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-one-content">
+                    <ul class="footer-one-content-work-list">
+                        <h2>Việc làm</h2>
+                        <li class="footer-one-content-work-item"><a href="#">Thể Loại</a></li>
+                        <li class="footer-one-content-work-item"><a href="#">Doanh nghiệp</a></li>
+                        <li class="footer-one-content-work-item"><a href="#">Cuộc thi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one-content">
+                    <ul class="footer-one-content-about-list">
+                        <h2>Về</h2>
+                        <li class="footer-one-content-about-item"><a href="#">Về chúng tôi</a></li>
+                        <li class="footer-one-content-about-item"><a href="#">Bảo mật</a></li>
+                        <li class="footer-one-content-about-item"><a href="#">team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one-content footer-one-content-term">
+                    <ul class="footer-one-content-term-list">
+                        <h2>Điều khoản</h2>
+                        <li class="footer-one-content-term-item"><a href="#">Chính sách bảo mật</a></li>
+                        <li class="footer-one-content-term-item"><a href="#">Các điều khoản và điều kiện</a></li>
+                        <li class="footer-one-content-term-item"><a href="#">Chính sách bản quyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one-content footer-one-content-partners">
+                    <ul class="footer-one-content-partners-list">
+                        <h2>Đối tác</h2>
+                        <li class="footer-one-content-partners-item">
+                            <a href="#">google</a>
+                        </li>
+                        <li class="footer-one-content-partners-item">
+                            <a href="#">nasa</a>
+                        </li>
+                        <li class="footer-one-content-partners-item">
+                            <a href="#">mars</a>
+                        </li>
+                        <li class="footer-one-content-partners-item">
+                            <a href="#">alien</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-one-content footer-one-content-app">
+                    <ul class="footer-one-content-app-list">
+                        <h2>Ứng dụng</h2>
+                        <li class="footer-one-content-app-item">
+                            <a href="#"><img src="./asset/img/app_store.png" alt=""></a>
+                        </li>
+                        <li class="footer-one-content-app-item">
+                            <a href="#"><img src="./asset/img/google_play.png" alt=""></a>
+                        </li>
+                        <li class="footer-one-content-app-item">
+                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-facebook"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-twitter"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-youtube"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="footer-one-content-app-item-link footer-one-content-app-item-insta"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-two">
+                <div class="footer-two-content">
+                    <span>
+                        423423 <br>
+                        Người dùng
+                    </span>
+                </div>
+                <div class="footer-two-content">
+                    <span>
+                        463 <br>
+                        Số lượng công việc đã đăng
+                    </span>
+                </div>
+                <div class="footer-two-content">
+                    <span>
+                        JobsGo ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759) <br>
+                        Copyright © 2023 Freelancer Technology Pty Limited (ACN 142 189 759)
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function copyUrl() {
+            var urlInput = document.getElementById("urlInput");
+            urlInput.select();
+            urlInput.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Đã sao chép đường dẫn: " + urlInput.value);
+        }
+
+        urlInput.oninput = function () {
+            var copyButton = document.getElementById("copyButton");
+            if (urlInput.value !== "") {
+                copyButton.style.display = "block";
+            } else {
+                copyButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>
