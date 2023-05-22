@@ -22,7 +22,7 @@
                 <div class="navbar-item navbar-item-up">
                     <div class="navbar-item-up-first">
                         <ul class="navbar-item-list">
-                            <li class="navbar-item-list-item"><img src="./asset/img/logo.png" alt=""></li>
+                            <a href="index.html"><li class="navbar-item-list-item"><img src="./asset/img/logo.png" alt=""></li></a>
                             <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Cách hoạt động</a>
                             </li>
                             <li class="navbar-item-list-item"><a href="#" class="navbar-item-up-link">Duyệt công
@@ -56,7 +56,7 @@
                         <li class="navbar-item-list-item navbar-item-list-item-company">
                             <a href="">Công ty </a>
                             <div class="blank-1"></div>
-                            <div class="navbar-item-list-item-info1">
+                            <div class="box-menu navbar-item-list-item-info1">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info1-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info1-item">
                                         <a href="">Công ty tiêu biểu </a>
@@ -70,13 +70,13 @@
                         <li class="navbar-item-list-item navbar-item-list-item-employer">
                             <a href="">Nhà tuyển dụng </a>
                             <div class="blank-2"></div>
-                            <div class="navbar-item-list-item-info2">
+                            <div class="box-menu navbar-item-list-item-info2">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info2-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info2-item">
-                                        <a href="">Đăng tin online </a>
+                                        <a href="">Danh sách nhà tuyển dụng</a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info2-item">
-                                        <a href="">Tìm hồ sơ </a> 
+                                        <a href="">Nhà tuyển dụng tiêu biểu</a> 
                                     </li>
                                 </ul>
                             </div>
@@ -84,7 +84,7 @@
                         <li class="navbar-item-list-item navbar-item-list-item-work">
                             <a href="">Việc làm </a>
                             <div class="blank-3"></div>
-                            <div class="navbar-item-list-item-info3">
+                            <div class="box-menu navbar-item-list-item-info3">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info3-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info3-item">
                                         <a href="">Việc làm mới nhất </a>
@@ -105,15 +105,15 @@
                             </div>
                         </li>
                         <li class="navbar-item-list-item navbar-item-list-item-cv-profile">
-                            <a href="CreateCV.html">CV/Hồ Sơ</a>
+                            <a href="">CV/Hồ Sơ</a>
                             <div class="blank-4"></div>
-                            <div class="navbar-item-list-item-info4">
+                            <div class="box-menu navbar-item-list-item-info4">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info4-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info4-item">
                                         <a href="CreateCV.html">Tạo CV</a>
                                     </li>
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info4-item">
-                                        <a href="">Sửa lỗi CV</a></li>
+                                        <a href="ProfileUser.html">Hồ sơ cá nhân</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -121,7 +121,7 @@
                         <li class="navbar-item-list-item navbar-item-list-item-blog">
                             <a href="blogIT.html">Blog IT</a>
                             <div class="blank-5"></div>
-                            <div class="navbar-item-list-item-info5">
+                            <div class="box-menu navbar-item-list-item-info5">
                                 <ul class="navbar-item-list-item-info-list navbar-item-list-item-info5-list">
                                     <li class="navbar-item-list-item-info-item navbar-item-list-item-info5-item">
                                         <a href="blogIT.html">Thông tin</a>
@@ -224,7 +224,7 @@
                 <div class="footer-one-content">
                     <ul class="footer-one-content-about-list">
                         <h2>Về</h2>
-                        <li class="footer-one-content-about-item"><a href="#">Về chúng tôi</a></li>
+                        <li class="footer-one-content-about-item"><a href="aboutUs.html">Về chúng tôi</a></li>
                         <li class="footer-one-content-about-item"><a href="#">Bảo mật</a></li>
                         <li class="footer-one-content-about-item"><a href="#">team</a></li>
                     </ul>
@@ -299,5 +299,14 @@
         </footer>
     </div>
 </body>
+<script>
+    // đăng xuất
+    window.onload = function () {
+        var buttons = document.querySelector("#logout");
+        buttons.addEventListener("click", function logout() {
+            window.location.href = "index.html"
+        })
 
+    };
+</script>
 </html>

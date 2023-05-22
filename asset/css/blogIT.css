@@ -290,13 +290,12 @@ header {
   .navbar-item-list-item-cv-profile:hover .blank-4 {
     display: block;
   }
-
   .blank-5{
     position: absolute;
     width: 20rem;
     height: 10rem;
     top: 2rem;
-    display: none;
+    /* display: none; */
     z-index: 1;
   }
   .navbar-item-list-item-blog:hover .blank- {
